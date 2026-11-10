@@ -23,6 +23,7 @@ export const LAUNCHER_GRANTS = Object.freeze([
   ["appops", "GET_USAGE_STATS", "know which app is in front"],
   ["appops", "PROJECT_MEDIA", "mirror the centre screen to an identified screen"],
   ["appops", "WRITE_SETTINGS", "brightness slider in the Control Centre"],
+  ["appops", "MANAGE_EXTERNAL_STORAGE", "the Store installs an app file from the car's storage or a USB stick"],
   ["pm", "android.permission.WRITE_SECURE_SETTINGS", "helper link re-enables its own services after boot"],
   ["pm", "android.permission.ACCESS_FINE_LOCATION", "weather and prayer times for where the car is (optional)"],
   ["pm", "android.permission.ACCESS_COARSE_LOCATION", "weather and prayer times for where the car is (optional)"],

@@ -1,0 +1,14 @@
+{"schema":1,"wallpapers":[
+{"id":"carbon-weave","nameEn":"Carbon weave","nameAr":"نسيج الكربون","file":"carbon-weave.jpg","thumb":"carbon-weave.thumb.jpg","sha256":"8f36c6b15808f05a96380c3e9887f555b2481a6e3d2e5fe40fb109c8798588bd","width":2560,"height":1440,"tone":"dark"},
+{"id":"rain-glass","nameEn":"Rain on glass","nameAr":"مطر على الزجاج","file":"rain-glass.jpg","thumb":"rain-glass.thumb.jpg","sha256":"7ba6ef769bd416feaf46ae5d0a5c90cad8c3b05e07e91b21275a4a8b835b57fb","width":2560,"height":1440,"tone":"dark"},
+{"id":"desert-stars","nameEn":"Desert stars","nameAr":"نجوم الصحراء","file":"desert-stars.jpg","thumb":"desert-stars.thumb.jpg","sha256":"0275fca6998f3ad424fc31c7840461b009f965fc8b8a08ae333857cf4f506e1c","width":2560,"height":1440,"tone":"dark"},
+{"id":"aurora-lake","nameEn":"Aurora lake","nameAr":"شفق البحيرة","file":"aurora-lake.jpg","thumb":"aurora-lake.thumb.jpg","sha256":"217a61a435a9192f11b711c7d44c6db9a1aec3c79053d7b7c82a207d6bc2f007","width":2560,"height":1440,"tone":"dark"},
+{"id":"black-marble","nameEn":"Black marble","nameAr":"رخام أسود","file":"black-marble.jpg","thumb":"black-marble.thumb.jpg","sha256":"f72237aa8301e371a1505b60033e1bba644372bca212d0abc15fb698219b36ee","width":2560,"height":1440,"tone":"dark"},
+{"id":"coast-road","nameEn":"Coast road","nameAr":"طريق الساحل","file":"coast-road.jpg","thumb":"coast-road.thumb.jpg","sha256":"2f713eb0377b21a9b469b9dbfb65f026cacea49ec96fd92e2af413678a57d20a","width":2560,"height":1440,"tone":"dark"},
+{"id":"moon-wave","nameEn":"Moonlit wave","nameAr":"موجة القمر","file":"moon-wave.jpg","thumb":"moon-wave.thumb.jpg","sha256":"825e589b13805e87cbb0ae77fcfbc2bc9c1dedf60865a5292ca1b71063e6873f","width":2560,"height":1440,"tone":"dark"},
+{"id":"titanium-edge","nameEn":"Titanium edge","nameAr":"حافة التيتانيوم","file":"titanium-edge.jpg","thumb":"titanium-edge.thumb.jpg","sha256":"ad6a4c1d32c6962af8795a6813d5be07492560142fbc65cb8736933e665f1da4","width":2560,"height":1440,"tone":"dark"},
+{"id":"pearl-silk","nameEn":"Pearl silk","nameAr":"حرير لؤلؤي","file":"pearl-silk.jpg","thumb":"pearl-silk.thumb.jpg","sha256":"434f839671d138d9c4d25e89ec8f7a91882c311f04782bbc40b8449cb3cbe990","width":2560,"height":1440,"tone":"light"},
+{"id":"sunrise-dunes","nameEn":"Sunrise dunes","nameAr":"كثبان الشروق","file":"sunrise-dunes.jpg","thumb":"sunrise-dunes.thumb.jpg","sha256":"1d6faa1969950ab5b72edc2f435b1c44d3959d35d67ea01d7c3949ebc526278f","width":2560,"height":1440,"tone":"light"},
+{"id":"white-marble","nameEn":"White marble","nameAr":"رخام أبيض","file":"white-marble.jpg","thumb":"white-marble.thumb.jpg","sha256":"aab260a5d9c947988ac977485eaee247f653b93f45d2b6b44e6256af59c481e4","width":2560,"height":1440,"tone":"light"},
+{"id":"misty-ridges","nameEn":"Misty ridges","nameAr":"قمم الضباب","file":"misty-ridges.jpg","thumb":"misty-ridges.thumb.jpg","sha256":"3b9daace78a5848e84c25dd5e10a51c410c0ac3875799542181c4e88bedf26fd","width":2560,"height":1440,"tone":"light"}
+]}
