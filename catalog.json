@@ -1,0 +1,291 @@
+{
+  "schema": 1,
+  "about": "Plain data for the Get apps tab. Official publisher sources only; no modified or cracked builds. Nothing here has been verified on the owner's G700. googleServices: none | partial | required. drm: true when HD playback depends on device certification. viaPlayStore: true when the publisher's own page hands off to Google Play instead of offering an APK. packages: known Android package names, used only to show a friendly name and an Installed badge.",
+  "apps": [
+    {
+      "id": "aurora-store",
+      "name": {
+        "en": "Aurora Store",
+        "ar": "متجر أورورا"
+      },
+      "summary": {
+        "en": "Open-source client for the Google Play catalogue. The practical way to reach Play apps on a car that has no Google services.",
+        "ar": "عميل مفتوح المصدر لكتالوج Google Play. الطريقة العملية للوصول إلى تطبيقات Play في سيارة لا تحتوي على خدمات Google."
+      },
+      "source": {
+        "url": "https://auroraoss.com/"
+      },
+      "note": {
+        "en": "Works with an anonymous session or your own Google account (using your own account is at your own risk). Apps you fetch with it may still need Google services to run.",
+        "ar": "يعمل بجلسة مجهولة أو بحسابك في Google (استخدام حسابك الشخصي على مسؤوليتك). التطبيقات التي تجلبها به قد تحتاج مع ذلك إلى خدمات Google لتعمل."
+      },
+      "openSource": true,
+      "googleServices": "none",
+      "packages": [
+        "com.aurora.store"
+      ]
+    },
+    {
+      "id": "f-droid",
+      "name": {
+        "en": "F-Droid",
+        "ar": "F-Droid"
+      },
+      "summary": {
+        "en": "Catalogue of free and open-source Android apps, with its own installer and updates.",
+        "ar": "كتالوج لتطبيقات أندرويد الحرة ومفتوحة المصدر، مع مثبّت وتحديثات خاصة به."
+      },
+      "source": {
+        "url": "https://f-droid.org/"
+      },
+      "note": {
+        "en": "",
+        "ar": ""
+      },
+      "openSource": true,
+      "googleServices": "none",
+      "packages": [
+        "org.fdroid.fdroid"
+      ]
+    },
+    {
+      "id": "newpipe",
+      "name": {
+        "en": "NewPipe",
+        "ar": "NewPipe"
+      },
+      "summary": {
+        "en": "Lightweight open-source YouTube front-end. No account and no Google services needed.",
+        "ar": "واجهة خفيفة مفتوحة المصدر لـ YouTube. لا تحتاج حسابًا ولا خدمات Google."
+      },
+      "source": {
+        "url": "https://newpipe.net/"
+      },
+      "note": {
+        "en": "Designed for phones; on the wide centre screen SmartTube is usually the better fit.",
+        "ar": "مصمم للهواتف؛ على الشاشة الوسطى العريضة يكون SmartTube أنسب في العادة."
+      },
+      "openSource": true,
+      "googleServices": "none",
+      "packages": [
+        "org.schabi.newpipe"
+      ]
+    },
+    {
+      "id": "smarttube",
+      "name": {
+        "en": "SmartTube",
+        "ar": "SmartTube"
+      },
+      "summary": {
+        "en": "Open-source YouTube client built for big screens and remote-style navigation.",
+        "ar": "عميل YouTube مفتوح المصدر مصمم للشاشات الكبيرة والتنقل بأسلوب جهاز التحكم."
+      },
+      "source": {
+        "url": "https://github.com/yuliskov/SmartTube"
+      },
+      "note": {
+        "en": "Download only from the developer's GitHub releases; look-alike sites exist.",
+        "ar": "نزّله فقط من إصدارات المطوّر على GitHub؛ توجد مواقع مقلّدة."
+      },
+      "openSource": true,
+      "googleServices": "none",
+      "packages": [
+        "com.teamsmart.videomanager.tv",
+        "com.liskovsoft.smarttubetv.beta"
+      ]
+    },
+    {
+      "id": "netflix",
+      "name": {
+        "en": "Netflix",
+        "ar": "Netflix"
+      },
+      "summary": {
+        "en": "The official Netflix app. Netflix offers no download of its own for uncertified devices, so get it through Aurora Store (above) or use the browser player.",
+        "ar": "تطبيق Netflix الرسمي. لا توفر Netflix تحميلاً خاصاً للأجهزة غير المعتمدة، فاحصل عليه عبر متجر أورورا (أعلاه) أو استخدم مشغل المتصفح."
+      },
+      "source": {
+        "url": "https://www.netflix.com/"
+      },
+      "note": {
+        "en": "May refuse this head unit or play in standard definition only, because the device is not certified for Netflix. Needs a Netflix subscription. Not verified on the G700.",
+        "ar": "قد يرفض هذه الشاشة أو يعمل بالدقة العادية فقط لأن الجهاز غير معتمد لدى Netflix. يحتاج إلى اشتراك Netflix. لم يُتحقق منه على G700."
+      },
+      "openSource": false,
+      "googleServices": "partial",
+      "drm": true,
+      "needsAccount": true,
+      "packages": [
+        "com.netflix.mediaclient"
+      ]
+    },
+    {
+      "id": "iptv-smarters-pro",
+      "name": {
+        "en": "IPTV Smarters Pro",
+        "ar": "IPTV Smarters Pro"
+      },
+      "summary": {
+        "en": "Player for IPTV services. It ships with no channels; you add the details of a service you subscribe to.",
+        "ar": "مشغّل لخدمات IPTV. لا يأتي بأي قنوات؛ تضيف بيانات الخدمة التي تشترك بها."
+      },
+      "source": {
+        "url": "https://www.iptvsmarters.com/"
+      },
+      "note": {
+        "en": "Use the official site only. Use it only with a service you are entitled to watch.",
+        "ar": "استخدم الموقع الرسمي فقط، ومع خدمة يحق لك مشاهدتها فقط."
+      },
+      "openSource": false,
+      "googleServices": "none",
+      "needsAccount": true,
+      "packages": [
+        "com.nst.iptvsmarterstvbox"
+      ]
+    },
+    {
+      "id": "vlc",
+      "name": {
+        "en": "VLC",
+        "ar": "VLC"
+      },
+      "summary": {
+        "en": "Open-source player for local files, USB drives and network streams.",
+        "ar": "مشغّل مفتوح المصدر للملفات المحلية ووحدات USB والبث عبر الشبكة."
+      },
+      "source": {
+        "url": "https://www.videolan.org/vlc/download-android.html"
+      },
+      "note": {
+        "en": "",
+        "ar": ""
+      },
+      "openSource": true,
+      "googleServices": "none",
+      "packages": [
+        "org.videolan.vlc"
+      ]
+    },
+    {
+      "id": "kodi",
+      "name": {
+        "en": "Kodi",
+        "ar": "Kodi"
+      },
+      "summary": {
+        "en": "Open-source media centre for your own library, with a ten-foot interface that suits a large screen.",
+        "ar": "مركز وسائط مفتوح المصدر لمكتبتك الخاصة، بواجهة تناسب الشاشات الكبيرة."
+      },
+      "source": {
+        "url": "https://kodi.tv/download/android/"
+      },
+      "note": {
+        "en": "Choose the ARMV8A (64-bit) build.",
+        "ar": "اختر نسخة ARMV8A (64 بت)."
+      },
+      "openSource": true,
+      "googleServices": "none",
+      "packages": [
+        "org.xbmc.kodi"
+      ]
+    },
+    {
+      "id": "organic-maps",
+      "name": {
+        "en": "Organic Maps",
+        "ar": "Organic Maps"
+      },
+      "summary": {
+        "en": "Open-source offline maps and navigation based on OpenStreetMap. No account, no tracking.",
+        "ar": "خرائط وملاحة مفتوحة المصدر تعمل دون اتصال، مبنية على OpenStreetMap. بلا حساب وبلا تتبّع."
+      },
+      "source": {
+        "url": "https://organicmaps.app/"
+      },
+      "note": {
+        "en": "No live traffic. Download the map regions you need over Wi-Fi first.",
+        "ar": "لا تتوفر حركة المرور المباشرة. نزّل خرائط المناطق التي تحتاجها عبر Wi-Fi أولًا."
+      },
+      "openSource": true,
+      "googleServices": "none",
+      "packages": [
+        "app.organicmaps"
+      ]
+    },
+    {
+      "id": "waze",
+      "name": {
+        "en": "Waze",
+        "ar": "Waze"
+      },
+      "summary": {
+        "en": "Community navigation with live traffic.",
+        "ar": "ملاحة مجتمعية مع حركة المرور المباشرة."
+      },
+      "source": {
+        "url": "https://www.waze.com/"
+      },
+      "note": {
+        "en": "Needs Google services and may not run on this car. Waze's site hands off to Google Play, so fetch it with Aurora Store.",
+        "ar": "يحتاج خدمات Google وقد لا يعمل على هذه السيارة. موقع Waze يحيل إلى Google Play، لذا اجلبه عبر متجر أورورا."
+      },
+      "openSource": false,
+      "googleServices": "required",
+      "viaPlayStore": true,
+      "packages": [
+        "com.waze"
+      ]
+    },
+    {
+      "id": "spotify",
+      "name": {
+        "en": "Spotify",
+        "ar": "Spotify"
+      },
+      "summary": {
+        "en": "Music and podcast streaming.",
+        "ar": "بث الموسيقى والبودكاست."
+      },
+      "source": {
+        "url": "https://www.spotify.com/download/android/"
+      },
+      "note": {
+        "en": "Spotify's page hands off to Google Play, so fetch it with Aurora Store. Signing in with Google and some other features may need Google services; signing in with e-mail is the safer choice.",
+        "ar": "صفحة Spotify تحيل إلى Google Play، لذا اجلبه عبر متجر أورورا. تسجيل الدخول بحساب Google وبعض الميزات الأخرى قد تحتاج خدمات Google؛ تسجيل الدخول بالبريد الإلكتروني هو الخيار الأضمن."
+      },
+      "openSource": false,
+      "googleServices": "partial",
+      "viaPlayStore": true,
+      "needsAccount": true,
+      "packages": [
+        "com.spotify.music"
+      ]
+    },
+    {
+      "id": "anghami",
+      "name": {
+        "en": "Anghami",
+        "ar": "أنغامي"
+      },
+      "summary": {
+        "en": "Arabic and international music streaming.",
+        "ar": "بث الموسيقى العربية والعالمية."
+      },
+      "source": {
+        "url": "https://www.anghami.com/"
+      },
+      "note": {
+        "en": "Anghami's site hands off to the app stores, so fetch it with Aurora Store. Some sign-in options and notifications may need Google services.",
+        "ar": "موقع أنغامي يحيل إلى متاجر التطبيقات، لذا اجلبه عبر متجر أورورا. بعض خيارات تسجيل الدخول والإشعارات قد تحتاج خدمات Google."
+      },
+      "openSource": false,
+      "googleServices": "partial",
+      "viaPlayStore": true,
+      "needsAccount": true,
+      "packages": [
+        "com.anghami"
+      ]
+    }
+  ]
+}
