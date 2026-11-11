@@ -1,14 +1,1129 @@
-{"schema":1,"wallpapers":[
-{"id":"carbon-weave","nameEn":"Carbon weave","nameAr":"نسيج الكربون","file":"carbon-weave.jpg","thumb":"carbon-weave.thumb.jpg","sha256":"8f36c6b15808f05a96380c3e9887f555b2481a6e3d2e5fe40fb109c8798588bd","width":2560,"height":1440,"tone":"dark"},
-{"id":"rain-glass","nameEn":"Rain on glass","nameAr":"مطر على الزجاج","file":"rain-glass.jpg","thumb":"rain-glass.thumb.jpg","sha256":"7ba6ef769bd416feaf46ae5d0a5c90cad8c3b05e07e91b21275a4a8b835b57fb","width":2560,"height":1440,"tone":"dark"},
-{"id":"desert-stars","nameEn":"Desert stars","nameAr":"نجوم الصحراء","file":"desert-stars.jpg","thumb":"desert-stars.thumb.jpg","sha256":"0275fca6998f3ad424fc31c7840461b009f965fc8b8a08ae333857cf4f506e1c","width":2560,"height":1440,"tone":"dark"},
-{"id":"aurora-lake","nameEn":"Aurora lake","nameAr":"شفق البحيرة","file":"aurora-lake.jpg","thumb":"aurora-lake.thumb.jpg","sha256":"217a61a435a9192f11b711c7d44c6db9a1aec3c79053d7b7c82a207d6bc2f007","width":2560,"height":1440,"tone":"dark"},
-{"id":"black-marble","nameEn":"Black marble","nameAr":"رخام أسود","file":"black-marble.jpg","thumb":"black-marble.thumb.jpg","sha256":"f72237aa8301e371a1505b60033e1bba644372bca212d0abc15fb698219b36ee","width":2560,"height":1440,"tone":"dark"},
-{"id":"coast-road","nameEn":"Coast road","nameAr":"طريق الساحل","file":"coast-road.jpg","thumb":"coast-road.thumb.jpg","sha256":"2f713eb0377b21a9b469b9dbfb65f026cacea49ec96fd92e2af413678a57d20a","width":2560,"height":1440,"tone":"dark"},
-{"id":"moon-wave","nameEn":"Moonlit wave","nameAr":"موجة القمر","file":"moon-wave.jpg","thumb":"moon-wave.thumb.jpg","sha256":"825e589b13805e87cbb0ae77fcfbc2bc9c1dedf60865a5292ca1b71063e6873f","width":2560,"height":1440,"tone":"dark"},
-{"id":"titanium-edge","nameEn":"Titanium edge","nameAr":"حافة التيتانيوم","file":"titanium-edge.jpg","thumb":"titanium-edge.thumb.jpg","sha256":"ad6a4c1d32c6962af8795a6813d5be07492560142fbc65cb8736933e665f1da4","width":2560,"height":1440,"tone":"dark"},
-{"id":"pearl-silk","nameEn":"Pearl silk","nameAr":"حرير لؤلؤي","file":"pearl-silk.jpg","thumb":"pearl-silk.thumb.jpg","sha256":"434f839671d138d9c4d25e89ec8f7a91882c311f04782bbc40b8449cb3cbe990","width":2560,"height":1440,"tone":"light"},
-{"id":"sunrise-dunes","nameEn":"Sunrise dunes","nameAr":"كثبان الشروق","file":"sunrise-dunes.jpg","thumb":"sunrise-dunes.thumb.jpg","sha256":"1d6faa1969950ab5b72edc2f435b1c44d3959d35d67ea01d7c3949ebc526278f","width":2560,"height":1440,"tone":"light"},
-{"id":"white-marble","nameEn":"White marble","nameAr":"رخام أبيض","file":"white-marble.jpg","thumb":"white-marble.thumb.jpg","sha256":"aab260a5d9c947988ac977485eaee247f653b93f45d2b6b44e6256af59c481e4","width":2560,"height":1440,"tone":"light"},
-{"id":"misty-ridges","nameEn":"Misty ridges","nameAr":"قمم الضباب","file":"misty-ridges.jpg","thumb":"misty-ridges.thumb.jpg","sha256":"3b9daace78a5848e84c25dd5e10a51c410c0ac3875799542181c4e88bedf26fd","width":2560,"height":1440,"tone":"light"}
-]}
+{
+ "schema": 1,
+ "wallpapers": [
+  {
+   "id": "carbon-weave",
+   "nameEn": "Carbon weave",
+   "nameAr": "نسيج الكربون",
+   "file": "carbon-weave.jpg",
+   "thumb": "carbon-weave.thumb.jpg",
+   "sha256": "8f36c6b15808f05a96380c3e9887f555b2481a6e3d2e5fe40fb109c8798588bd",
+   "width": 2560,
+   "height": 1440,
+   "tone": "dark"
+  },
+  {
+   "id": "rain-glass",
+   "nameEn": "Rain on glass",
+   "nameAr": "مطر على الزجاج",
+   "file": "rain-glass.jpg",
+   "thumb": "rain-glass.thumb.jpg",
+   "sha256": "7ba6ef769bd416feaf46ae5d0a5c90cad8c3b05e07e91b21275a4a8b835b57fb",
+   "width": 2560,
+   "height": 1440,
+   "tone": "dark"
+  },
+  {
+   "id": "desert-stars",
+   "nameEn": "Desert stars",
+   "nameAr": "نجوم الصحراء",
+   "file": "desert-stars.jpg",
+   "thumb": "desert-stars.thumb.jpg",
+   "sha256": "0275fca6998f3ad424fc31c7840461b009f965fc8b8a08ae333857cf4f506e1c",
+   "width": 2560,
+   "height": 1440,
+   "tone": "dark"
+  },
+  {
+   "id": "aurora-lake",
+   "nameEn": "Aurora lake",
+   "nameAr": "شفق البحيرة",
+   "file": "aurora-lake.jpg",
+   "thumb": "aurora-lake.thumb.jpg",
+   "sha256": "217a61a435a9192f11b711c7d44c6db9a1aec3c79053d7b7c82a207d6bc2f007",
+   "width": 2560,
+   "height": 1440,
+   "tone": "dark"
+  },
+  {
+   "id": "black-marble",
+   "nameEn": "Black marble",
+   "nameAr": "رخام أسود",
+   "file": "black-marble.jpg",
+   "thumb": "black-marble.thumb.jpg",
+   "sha256": "f72237aa8301e371a1505b60033e1bba644372bca212d0abc15fb698219b36ee",
+   "width": 2560,
+   "height": 1440,
+   "tone": "dark"
+  },
+  {
+   "id": "coast-road",
+   "nameEn": "Coast road",
+   "nameAr": "طريق الساحل",
+   "file": "coast-road.jpg",
+   "thumb": "coast-road.thumb.jpg",
+   "sha256": "2f713eb0377b21a9b469b9dbfb65f026cacea49ec96fd92e2af413678a57d20a",
+   "width": 2560,
+   "height": 1440,
+   "tone": "dark"
+  },
+  {
+   "id": "moon-wave",
+   "nameEn": "Moonlit wave",
+   "nameAr": "موجة القمر",
+   "file": "moon-wave.jpg",
+   "thumb": "moon-wave.thumb.jpg",
+   "sha256": "825e589b13805e87cbb0ae77fcfbc2bc9c1dedf60865a5292ca1b71063e6873f",
+   "width": 2560,
+   "height": 1440,
+   "tone": "dark"
+  },
+  {
+   "id": "titanium-edge",
+   "nameEn": "Titanium edge",
+   "nameAr": "حافة التيتانيوم",
+   "file": "titanium-edge.jpg",
+   "thumb": "titanium-edge.thumb.jpg",
+   "sha256": "ad6a4c1d32c6962af8795a6813d5be07492560142fbc65cb8736933e665f1da4",
+   "width": 2560,
+   "height": 1440,
+   "tone": "dark"
+  },
+  {
+   "id": "pearl-silk",
+   "nameEn": "Pearl silk",
+   "nameAr": "حرير لؤلؤي",
+   "file": "pearl-silk.jpg",
+   "thumb": "pearl-silk.thumb.jpg",
+   "sha256": "434f839671d138d9c4d25e89ec8f7a91882c311f04782bbc40b8449cb3cbe990",
+   "width": 2560,
+   "height": 1440,
+   "tone": "light"
+  },
+  {
+   "id": "sunrise-dunes",
+   "nameEn": "Sunrise dunes",
+   "nameAr": "كثبان الشروق",
+   "file": "sunrise-dunes.jpg",
+   "thumb": "sunrise-dunes.thumb.jpg",
+   "sha256": "1d6faa1969950ab5b72edc2f435b1c44d3959d35d67ea01d7c3949ebc526278f",
+   "width": 2560,
+   "height": 1440,
+   "tone": "light"
+  },
+  {
+   "id": "white-marble",
+   "nameEn": "White marble",
+   "nameAr": "رخام أبيض",
+   "file": "white-marble.jpg",
+   "thumb": "white-marble.thumb.jpg",
+   "sha256": "aab260a5d9c947988ac977485eaee247f653b93f45d2b6b44e6256af59c481e4",
+   "width": 2560,
+   "height": 1440,
+   "tone": "light"
+  },
+  {
+   "id": "misty-ridges",
+   "nameEn": "Misty ridges",
+   "nameAr": "قمم الضباب",
+   "file": "misty-ridges.jpg",
+   "thumb": "misty-ridges.thumb.jpg",
+   "sha256": "3b9daace78a5848e84c25dd5e10a51c410c0ac3875799542181c4e88bedf26fd",
+   "width": 2560,
+   "height": 1440,
+   "tone": "light"
+  }
+ ],
+ "packs": [
+  {
+   "id": "flight-deck",
+   "nameEn": "Flight deck at dusk",
+   "nameAr": "قمرة القيادة عند الغسق",
+   "group": "aviation",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-flight-deck.thumb.jpg",
+   "centre": {
+    "file": "pack-flight-deck-centre.jpg",
+    "sha256": "672e1173e0e52da4c7ae68d7a7cb559e6de3cb4ac99493c2b1d3ebea233c751d",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-flight-deck-strip.jpg",
+    "sha256": "1bd5ffd4b5bf1c4ddf15955f6bd77230e3c516f9f9291cb9d12d50a7a07c23b3",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-flight-deck-roof.jpg",
+    "sha256": "cda0201539d4905554daa2807c432e82cfe9ee185554206f4035bb256cb9b7fe",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-flight-deck-climate.jpg",
+    "sha256": "acf24a368276f0af55490ebbc0293e3a4e6cc70809cf580558aa6d336f434b28",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "wing-sunrise",
+   "nameEn": "Wing at sunrise",
+   "nameAr": "الجناح عند الشروق",
+   "group": "aviation",
+   "tone": "dark",
+   "live": "drift",
+   "thumb": "pack-wing-sunrise.thumb.jpg",
+   "centre": {
+    "file": "pack-wing-sunrise-centre.jpg",
+    "sha256": "b26268d6a585b5692f34b931a3a51663f50e0785602c967aa6e8d0b3c000f05a",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-wing-sunrise-strip.jpg",
+    "sha256": "d96f88d0f99e576e3ebd21045acc2d3d0f45243a231f3185e0e4442e79b52df6",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-wing-sunrise-roof.jpg",
+    "sha256": "9131c495ff025c4cde462d0e215d7e8c9378253c85b5c2a5a653830581998534",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-wing-sunrise-climate.jpg",
+    "sha256": "60c322e905a7bb774092ca87d013135544595afee0fdb99148670eeb994c6980",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "final-approach",
+   "nameEn": "Final approach",
+   "nameAr": "الاقتراب النهائي",
+   "group": "aviation",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-final-approach.thumb.jpg",
+   "centre": {
+    "file": "pack-final-approach-centre.jpg",
+    "sha256": "ece2d059693d0cea7fa0ce9cc057ea7e5bf5727732889cfe6d93830424d53a4f",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-final-approach-strip.jpg",
+    "sha256": "14a284ee014fc3e32a18d567d498bd931206ca03b55911a270029638fe5f7f43",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-final-approach-roof.jpg",
+    "sha256": "83eae72a24ae894cec6146368010bb9a613afdd34f2d5cbe9e6120093c5d0724",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-final-approach-climate.jpg",
+    "sha256": "b4f01d76a484ea20089a54ed90c794e0260ce26a4fb2e5d5dd6f8cf063f2eea4",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "jet-apron",
+   "nameEn": "Jet on the apron",
+   "nameAr": "طائرة على الساحة",
+   "group": "aviation",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-jet-apron.thumb.jpg",
+   "centre": {
+    "file": "pack-jet-apron-centre.jpg",
+    "sha256": "fb509393941b1fea5aadfcec97978c321185cdd0462f626fd31fe7dc1953b95f",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-jet-apron-strip.jpg",
+    "sha256": "cee3ec97c8e899a6e13837a074f0ab4ea085f8386fc28e0b82a23c37870592b6",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-jet-apron-roof.jpg",
+    "sha256": "b24b48afc2501ebd36c8a706b3b068374107ddb16071b2b96b88f078fd0a6e28",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-jet-apron-climate.jpg",
+    "sha256": "1abcfea5fded306285fc452033e7cec4fd082b63648ea05ecbfc7bbd443df798",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "golden-contrails",
+   "nameEn": "Golden contrails",
+   "nameAr": "خطوط ذهبية في السماء",
+   "group": "aviation",
+   "tone": "dark",
+   "live": "drift",
+   "thumb": "pack-golden-contrails.thumb.jpg",
+   "centre": {
+    "file": "pack-golden-contrails-centre.jpg",
+    "sha256": "45a71642902f20a2f6e420056416c16f0291e480f47390cc71d15b4e3b13f28b",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-golden-contrails-strip.jpg",
+    "sha256": "6b300a63af2dd24326715bcd3a731bdf4869feb79a9997e4a264029ef2b479af",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-golden-contrails-roof.jpg",
+    "sha256": "6c5dfedb58dc9202ab323e09635dc48d878043ad7355edb1572d9b5d70c61ab9",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-golden-contrails-climate.jpg",
+    "sha256": "f2f522a03c2d5c84e49bf4465a39c0be99ebb3b0906f1906f6541da7ae584644",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "cloud-sea",
+   "nameEn": "Sea of clouds",
+   "nameAr": "بحر الغيوم",
+   "group": "sky",
+   "tone": "light",
+   "live": "drift",
+   "thumb": "pack-cloud-sea.thumb.jpg",
+   "centre": {
+    "file": "pack-cloud-sea-centre.jpg",
+    "sha256": "a910e7f83ec4b0265dc3770852e609cffa3412a6126ad924170b0ccd2118b4d6",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-cloud-sea-strip.jpg",
+    "sha256": "07a8a54df10fe98b63e56895c624db7822d420a92bf6028a54b4678edf5fddce",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-cloud-sea-roof.jpg",
+    "sha256": "92b4e24bd6f826ff714c0bccc120109ec63ec0b55a66b6cd850999f0b44c6a65",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-cloud-sea-climate.jpg",
+    "sha256": "37171ad956bdc170189ce44a6f9bfc00be4720dff55d8321f9d8ef4ccf2fa0f4",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "aurora-peaks",
+   "nameEn": "Aurora peaks",
+   "nameAr": "قمم الشفق",
+   "group": "sky",
+   "tone": "dark",
+   "live": "aurora",
+   "thumb": "pack-aurora-peaks.thumb.jpg",
+   "centre": {
+    "file": "pack-aurora-peaks-centre.jpg",
+    "sha256": "24510e6db7f6cbd1ea6852a2db2e90b4a4030aff696ed9480d5425ce46b17aca",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-aurora-peaks-strip.jpg",
+    "sha256": "1011a4127b0625d67d70a3d2cc5b28ff568d16de37aea42304aab857174fd417",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-aurora-peaks-roof.jpg",
+    "sha256": "9a7a8d198000fd5cb9f1311160dc40c43f80fae3d86f5afd0946654fd348f0b3",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-aurora-peaks-climate.jpg",
+    "sha256": "2a80222391821edaa936bb4441a21f6bbdd30bffdb31c6b18976ce8e817905c9",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "canyon-galaxy",
+   "nameEn": "Canyon galaxy",
+   "nameAr": "مجرّة الوادي",
+   "group": "sky",
+   "tone": "dark",
+   "live": "stars",
+   "thumb": "pack-canyon-galaxy.thumb.jpg",
+   "centre": {
+    "file": "pack-canyon-galaxy-centre.jpg",
+    "sha256": "625aba250e5756fa426425f018be3f7f74d30c36d01775d0aa6daa91206d4a09",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-canyon-galaxy-strip.jpg",
+    "sha256": "35f5bda8492e04b0a9dbbf6cbe3b77d49f1d348f66ce02f196c64cedebbf6ac0",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-canyon-galaxy-roof.jpg",
+    "sha256": "5d10487a52980c4fe55a1214b6c2d017cf74defb1c6c3442969980386c466252",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-canyon-galaxy-climate.jpg",
+    "sha256": "ddb19f4e5df11c47612d23595f40edf12d7483027c605ad35f653e03961b482e",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "deep-nebula",
+   "nameEn": "Deep nebula",
+   "nameAr": "سديم عميق",
+   "group": "sky",
+   "tone": "dark",
+   "live": "stars",
+   "thumb": "pack-deep-nebula.thumb.jpg",
+   "centre": {
+    "file": "pack-deep-nebula-centre.jpg",
+    "sha256": "388f1786938300b9b5320a767ef03fe255f72aa9ba6241fb495508da07a4e496",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-deep-nebula-strip.jpg",
+    "sha256": "0ecd7c925267689e8e786a5908a3d5ed8bd365b9d569be369ac963852dd7f8e7",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-deep-nebula-roof.jpg",
+    "sha256": "efbabbb5f33cdc41f1d8f82c5bf4562195ff6436e1273abb87025c5f82df8bab",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-deep-nebula-climate.jpg",
+    "sha256": "dd8327de660076b971d5e00fdf27d77f5a00df63255ecefc11ab25b65b6ec383",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "earth-night",
+   "nameEn": "Earth at night",
+   "nameAr": "الأرض ليلاً",
+   "group": "sky",
+   "tone": "dark",
+   "live": "stars",
+   "thumb": "pack-earth-night.thumb.jpg",
+   "centre": {
+    "file": "pack-earth-night-centre.jpg",
+    "sha256": "94d80596d6e01ab921321c614d7edbbd5f0a203db8a3552a8388a1e783b1b7fb",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-earth-night-strip.jpg",
+    "sha256": "e6047636acca94b88c4f6b8b1ff2c9b0b21e263651b7e1d257e388890ed1074e",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-earth-night-roof.jpg",
+    "sha256": "0f0e2accffc4883341889864cb0cbfc9a490eb228aa76df86071a980a9e96f29",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-earth-night-climate.jpg",
+    "sha256": "a06c64c11494b39a5adfb2ae4ae0f03b3f6740ed980574b0729627e8243ff0c1",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "storm-sea",
+   "nameEn": "Storm sea",
+   "nameAr": "بحر العاصفة",
+   "group": "sky",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-storm-sea.thumb.jpg",
+   "centre": {
+    "file": "pack-storm-sea-centre.jpg",
+    "sha256": "0fa7666533c5b23bb7e4490198a689b8b0e4d6bb4e2476342b928f6640de6eb3",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-storm-sea-strip.jpg",
+    "sha256": "c4089c2c54eac279fe16c6c3ee1ef09803445ba3d1e2b1399277cb1e1c7930ac",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-storm-sea-roof.jpg",
+    "sha256": "5be05ceee16fadb23e9f7f57564d2f5e9b95abd15c87bb700f30acedcf3adcb3",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-storm-sea-climate.jpg",
+    "sha256": "5cfaba561224dce168c576bf6365dab136c74036980818cd9ef9dfe74306e8bb",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "moonrise-cliffs",
+   "nameEn": "Moonrise cliffs",
+   "nameAr": "طلوع القمر",
+   "group": "sky",
+   "tone": "dark",
+   "live": "stars",
+   "thumb": "pack-moonrise-cliffs.thumb.jpg",
+   "centre": {
+    "file": "pack-moonrise-cliffs-centre.jpg",
+    "sha256": "fcbef66f7b4f8c2e07d17535d142aa52382d303d1aef0d35ee802293c9c8e7f5",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-moonrise-cliffs-strip.jpg",
+    "sha256": "ac033454bd0877ca92f62a57e5e3c4c0e64f6d06797b1247a8d5ce08c8f38baa",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-moonrise-cliffs-roof.jpg",
+    "sha256": "c605a2e575dcf7c32a989d9c5dcf0aa940f599f187ffea3803043a825a6552b2",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-moonrise-cliffs-climate.jpg",
+    "sha256": "d3b0c29004e7c9baa1c205e7f8c0548052ef0aa5c6367d0c007291ccc38e1234",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "indigo-dunes",
+   "nameEn": "Indigo dunes",
+   "nameAr": "كثبان النيلي",
+   "group": "nature",
+   "tone": "dark",
+   "live": "stars",
+   "thumb": "pack-indigo-dunes.thumb.jpg",
+   "centre": {
+    "file": "pack-indigo-dunes-centre.jpg",
+    "sha256": "d5ee070ae8a1330dcd95ed30bf13127b91c9d8ff2daf0266f4df4e747f86ff32",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-indigo-dunes-strip.jpg",
+    "sha256": "d714d1f40abb035b23ccc1479623466a4c4ac836d04071d8da02c64495660337",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-indigo-dunes-roof.jpg",
+    "sha256": "02e699c8e4207df4d5991335e2e12be4ad85b653766fe8becf0f45ab31eaea46",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-indigo-dunes-climate.jpg",
+    "sha256": "22792b5f01f37fb2c18247a56873e60e911bce31227fefc2d5b2afab2e1c9aec",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "lava-fields",
+   "nameEn": "Lava fields",
+   "nameAr": "حقول الحمم",
+   "group": "nature",
+   "tone": "dark",
+   "live": "motes",
+   "thumb": "pack-lava-fields.thumb.jpg",
+   "centre": {
+    "file": "pack-lava-fields-centre.jpg",
+    "sha256": "420191fddc4d0477e08801d418ae201181f2d6140466ec2304e4ae1b510c53bf",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-lava-fields-strip.jpg",
+    "sha256": "91808e8c651d579ad4740eb8a89cc36e702249f94d4fbdaac517622006052a9a",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-lava-fields-roof.jpg",
+    "sha256": "5285d268ea70adc7c2e3d7fb32c597be7bacd1b829894995a0173f1e2ee7818f",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-lava-fields-climate.jpg",
+    "sha256": "17348c93781becfe01eb8031d3f801ce896b50799ca76189d1f6e67d224a9d57",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "ice-cave",
+   "nameEn": "Ice cave",
+   "nameAr": "كهف الجليد",
+   "group": "nature",
+   "tone": "dark",
+   "live": "motes",
+   "thumb": "pack-ice-cave.thumb.jpg",
+   "centre": {
+    "file": "pack-ice-cave-centre.jpg",
+    "sha256": "fda824320e04b9e4cad3440ffca0431ef7c8a764d35dc699ecc40e6c8f72ec25",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-ice-cave-strip.jpg",
+    "sha256": "da533833469d07f86c7e879d7a1de5697fb678d87c0dc13c5e0180e4b5939138",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-ice-cave-roof.jpg",
+    "sha256": "76245de624612294f06a097dda9a2c5272794c7d9a0feeb0c103150bd286d6dc",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-ice-cave-climate.jpg",
+    "sha256": "3f1782c8f30914a85507c4424b1500ac820a098b21352edc4c90a631b06134d3",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "glacier-lagoon",
+   "nameEn": "Glacier lagoon",
+   "nameAr": "بحيرة الجليد",
+   "group": "nature",
+   "tone": "dark",
+   "live": "drift",
+   "thumb": "pack-glacier-lagoon.thumb.jpg",
+   "centre": {
+    "file": "pack-glacier-lagoon-centre.jpg",
+    "sha256": "0e927440e44306f255920a9d22ab7642173a4d1cb00b4613159cca63e42ebcc9",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-glacier-lagoon-strip.jpg",
+    "sha256": "efa32e2f40248c54c71b5dedd0590af00611f282c9d9b8fe49b05a21a72c2d4a",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-glacier-lagoon-roof.jpg",
+    "sha256": "965594ddd76841c5429a99b6b8fbc46a8d7a38775faf47174300fbb51067249b",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-glacier-lagoon-climate.jpg",
+    "sha256": "da1ea0353bf79b77bc8d3fd0bfafe0840270778aeeb3afb54ccc46c51bd9c9d0",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "emerald-road",
+   "nameEn": "Emerald road",
+   "nameAr": "الطريق الزمردي",
+   "group": "nature",
+   "tone": "dark",
+   "live": "motes",
+   "thumb": "pack-emerald-road.thumb.jpg",
+   "centre": {
+    "file": "pack-emerald-road-centre.jpg",
+    "sha256": "49f3fe41a744ad3c48bf038d1e18a38227bc29020338359a53ab5d8537a1d1f6",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-emerald-road-strip.jpg",
+    "sha256": "78619fb6f5fe3abbf43c0574fef58e2b1e0ed5fa27594831c0d80ebbba3d10b0",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-emerald-road-roof.jpg",
+    "sha256": "2a13da1bcb0db837128e31e089a62501c18c94e6f9055d13bc52313606f127f5",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-emerald-road-climate.jpg",
+    "sha256": "01debc9863e0b7b9bb973d832da615e09b0e18f41c5c4c700d7e3e9285c0e60e",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "autumn-pass",
+   "nameEn": "Autumn pass",
+   "nameAr": "ممر الخريف",
+   "group": "nature",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-autumn-pass.thumb.jpg",
+   "centre": {
+    "file": "pack-autumn-pass-centre.jpg",
+    "sha256": "b397a45f550081a83dd634839fa14c16243863e9aec6dcfafd2a0272f62f74ea",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-autumn-pass-strip.jpg",
+    "sha256": "067d36ad28c6bdb903deb996a3a32ead8d88e51b7d2d0a42aa3badb617c994cb",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-autumn-pass-roof.jpg",
+    "sha256": "8b1e6a75b4a060e06e3141e493d09b53e963cbede23ee0c9a22220913b2cfa0a",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-autumn-pass-climate.jpg",
+    "sha256": "f7dbfdee39bcf3f62f2de68f7fc3bf4472913599d61c0369cffdfe5b11c9418b",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "city-arteries",
+   "nameEn": "City arteries",
+   "nameAr": "شرايين المدينة",
+   "group": "city",
+   "tone": "dark",
+   "live": "drift",
+   "thumb": "pack-city-arteries.thumb.jpg",
+   "centre": {
+    "file": "pack-city-arteries-centre.jpg",
+    "sha256": "7a1fa1c5675ffd2dc2cb59f45680300d8c40e4ab014be12337cc9a0c5ca6de46",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-city-arteries-strip.jpg",
+    "sha256": "b0309931f59b3871a8dd86cbe237643161073e86b87a4fc48d089b467308dad7",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-city-arteries-roof.jpg",
+    "sha256": "54c8153af0247a9c0cf1d4948e4e9d81e0cfee9a704bf9d4bd28db05401d0c7c",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-city-arteries-climate.jpg",
+    "sha256": "cbc2ab66e3227fc53149630e4bc39ed24bab1eae5626aa6a62c6984b382d7e75",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "blue-hour-domes",
+   "nameEn": "Blue hour domes",
+   "nameAr": "قباب الساعة الزرقاء",
+   "group": "city",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-blue-hour-domes.thumb.jpg",
+   "centre": {
+    "file": "pack-blue-hour-domes-centre.jpg",
+    "sha256": "5c7eaf1460f4dc99f7f685be769438fb6c184d31193cb192858615d4701499d0",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-blue-hour-domes-strip.jpg",
+    "sha256": "c8b9094ce1a6c02fee7fdeb8781261ee5419c681d25c7e6b9c1f086d5d30ab00",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-blue-hour-domes-roof.jpg",
+    "sha256": "e4bcdd5bf297b1b2547cc83fcbbfed9e5900294786152e0ff40f9d72517ac6ce",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-blue-hour-domes-climate.jpg",
+    "sha256": "c77140d7b10e5150f76debf80d3c1476316eb46fd57bf51a17e3b34ec6371b42",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "night-circuit",
+   "nameEn": "Night circuit",
+   "nameAr": "حلبة الليل",
+   "group": "city",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-night-circuit.thumb.jpg",
+   "centre": {
+    "file": "pack-night-circuit-centre.jpg",
+    "sha256": "273816ecbf0ac1b72956ba8e2e2383d73b1a357d022a63885eb29bba91295199",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-night-circuit-strip.jpg",
+    "sha256": "7c6f34e817985721c22b632e5f94ff3abb8137609ca02514ce7e2e4212ec1f05",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-night-circuit-roof.jpg",
+    "sha256": "16aca438e66fd4ad8c9b7377c069530ce3c08df1cb49450ffddf47cc4c870a78",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-night-circuit-climate.jpg",
+    "sha256": "71b923c345a902394d3b88732810f53983e26b47ea6a687cb7367683ff23849b",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "neon-rain",
+   "nameEn": "Neon rain",
+   "nameAr": "مطر النيون",
+   "group": "cinema",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-neon-rain.thumb.jpg",
+   "centre": {
+    "file": "pack-neon-rain-centre.jpg",
+    "sha256": "9805992d13b2621eb3e6bc387ec9c8b777299a7fb3b3672fb493cd7f7d5e5c1c",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-neon-rain-strip.jpg",
+    "sha256": "785afbebe030aea933333a480ac1631dc46dce25f0ac14f22871ecd590cda87e",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-neon-rain-roof.jpg",
+    "sha256": "740318464b62ab31a866ecce5a54e3b723c8e1c7dca06444d041da0fd6b76ee7",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-neon-rain-climate.jpg",
+    "sha256": "66ca99e6c1ebd8f3e34be2ea523e39847ca381d182af90a74dc0d499c708905d",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "twin-moons",
+   "nameEn": "Twin moons",
+   "nameAr": "قمران",
+   "group": "cinema",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-twin-moons.thumb.jpg",
+   "centre": {
+    "file": "pack-twin-moons-centre.jpg",
+    "sha256": "789a107ac1b04a16ff2688f143f904af66c85c7d4e2bd7dd3242ea2415fe4afc",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-twin-moons-strip.jpg",
+    "sha256": "00d12c7ee90132b002bcd70ea4e172632f560e825e2a77a43501437b41c974c7",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-twin-moons-roof.jpg",
+    "sha256": "bf2a84ca0e2656aa07d359b38d91be4b92063fb11ea53a6042e31da347a7fd95",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-twin-moons-climate.jpg",
+    "sha256": "524eb92849839bf1135cf75753360fa74c6573607d525a7a3e7c0fdecfe23a7e",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "synthwave-sun",
+   "nameEn": "Synthwave sun",
+   "nameAr": "شمس السينث ويف",
+   "group": "cinema",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-synthwave-sun.thumb.jpg",
+   "centre": {
+    "file": "pack-synthwave-sun-centre.jpg",
+    "sha256": "8d96eeb49f2e8e8054fcbdbaa7d590b9230f84ec2c8a46e70e3bcd0c60610c27",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-synthwave-sun-strip.jpg",
+    "sha256": "9f9e8a2c7239c69a694f3527005e7d44b6f49937026af1cac570d3c23d633d6b",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-synthwave-sun-roof.jpg",
+    "sha256": "94b0f54385e6c8e3aa99378baf3a72d1951ffbe84ee6095e2b3313eb3a9fc158",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-synthwave-sun-climate.jpg",
+    "sha256": "f884f0e7c2689981059ec6516181af1729a24c5c8434b176f9a36534523eaff8",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "summer-sky",
+   "nameEn": "Summer sky",
+   "nameAr": "سماء الصيف",
+   "group": "animation",
+   "tone": "light",
+   "live": "drift",
+   "thumb": "pack-summer-sky.thumb.jpg",
+   "centre": {
+    "file": "pack-summer-sky-centre.jpg",
+    "sha256": "45b49221bf8e7e7b2ad54ffc956af46a0d1decdd7865ed83b78985b86bc9eb44",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-summer-sky-strip.jpg",
+    "sha256": "144b41106ade459c75623deab0041af84343b97b8d46542e2f8b7511b70a455e",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-summer-sky-roof.jpg",
+    "sha256": "0f27d2cba171aad6f46d384f31327cb78224f6b356fa174c2798a9d9c553753f",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-summer-sky-climate.jpg",
+    "sha256": "da0ca124cff866bcf134e87b85d978db408b8c0b87e7047b37224dee6c245197",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "comet-city",
+   "nameEn": "Comet city",
+   "nameAr": "مدينة المذنّب",
+   "group": "animation",
+   "tone": "dark",
+   "live": "stars",
+   "thumb": "pack-comet-city.thumb.jpg",
+   "centre": {
+    "file": "pack-comet-city-centre.jpg",
+    "sha256": "35e436ee5dd34b47b00e1553de407cb13884d6d938b87239191efc208670855b",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-comet-city-strip.jpg",
+    "sha256": "d322daf42da37afdacc185f5b545182f24ce9c53e40d5866ed8b4886954d89ae",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-comet-city-roof.jpg",
+    "sha256": "5af6ca58f4e3179813b03940e5ce7c629342347b28b4b99bf068cc08dd9c245a",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-comet-city-climate.jpg",
+    "sha256": "9de9f5fb281d0f7d166cfadc1cbb79fd5c85c9b7f9840ff03611b8bdd5f4a7bb",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "paper-mountains",
+   "nameEn": "Paper mountains",
+   "nameAr": "جبال الورق",
+   "group": "animation",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-paper-mountains.thumb.jpg",
+   "centre": {
+    "file": "pack-paper-mountains-centre.jpg",
+    "sha256": "72cd39d41fefcc2f7745dd47615e01f65326381dea530e3e640c0891e9c93d0d",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-paper-mountains-strip.jpg",
+    "sha256": "76e28beb78486e6656b9dc2f92f1c2398e0422eac5874098df188a7e29d1aa88",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-paper-mountains-roof.jpg",
+    "sha256": "7c51d05890d01b319332b5e3bad2af5295c8257e761fc636082603c5a0d177fa",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-paper-mountains-climate.jpg",
+    "sha256": "3b065af6ff6b1b5110dde3d88882727a70f2f270c410ec490176b4055c1ebc0c",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "copper-carbon",
+   "nameEn": "Copper carbon",
+   "nameAr": "كربون نحاسي",
+   "group": "materials",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-copper-carbon.thumb.jpg",
+   "centre": {
+    "file": "pack-copper-carbon-centre.jpg",
+    "sha256": "6e9e95901f39750d010800094cb127699f27afdd166cbae440f9bc12805b6c71",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-copper-carbon-strip.jpg",
+    "sha256": "7fbc3e67be45398de66507dc56f2ee3a3222f1d0fd7f315f2f7d57b7a406ca9e",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-copper-carbon-roof.jpg",
+    "sha256": "ed84afc8f80bb29cf9f9a5ae4e468ec8c826cdd3f2ea7aeeb3c97b80f507f9c3",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-copper-carbon-climate.jpg",
+    "sha256": "25384f5fc5d840c66c6e78ea2e2eb818e032778557c16642879ed3783acc393d",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "liquid-chrome",
+   "nameEn": "Liquid chrome",
+   "nameAr": "كروم سائل",
+   "group": "materials",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-liquid-chrome.thumb.jpg",
+   "centre": {
+    "file": "pack-liquid-chrome-centre.jpg",
+    "sha256": "5cc13a33e66bd423b5d771f6ba46d8da14807d0272f67f6783b105a14df89bd3",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-liquid-chrome-strip.jpg",
+    "sha256": "d3971c844a1624d8495ff1a75613efee87d308f0fcbe83280cb5294a6aad082a",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-liquid-chrome-roof.jpg",
+    "sha256": "ba3308207c89c8d68400dca45de987874d259d61afd61009563fbe027d486f5c",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-liquid-chrome-climate.jpg",
+    "sha256": "3d8569340b0ca5a2ab91926b9015f2ab71bce92e3c567e21bfde08cfa05282a2",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "crystal-prisms",
+   "nameEn": "Crystal prisms",
+   "nameAr": "مناشير الكريستال",
+   "group": "materials",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-crystal-prisms.thumb.jpg",
+   "centre": {
+    "file": "pack-crystal-prisms-centre.jpg",
+    "sha256": "dbc5bd9e36f9717671f37ed28f7a222202f62f2fb27476981c8742669f52d738",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-crystal-prisms-strip.jpg",
+    "sha256": "e2d52698429bcaa9a794ff4ee117152f434b011a3f2b6644f37832afeef2eb98",
+    "width": 2460,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-crystal-prisms-roof.jpg",
+    "sha256": "1230366a73f6a1b8ef2ac2cdbf015976b4319c4deb30cc708744103d86a03d1f",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-crystal-prisms-climate.jpg",
+    "sha256": "6c8c235ee1dee93ec640b6b0cebe3269e1c9fb66986fca617d8926ce843431c1",
+    "width": 1920,
+    "height": 480
+   }
+  }
+ ]
+}
