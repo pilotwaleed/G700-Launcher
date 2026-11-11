@@ -26,6 +26,27 @@
       ]
     },
     {
+      "id": "microg",
+      "name": {
+        "en": "microG Services",
+        "ar": "خدمات microG"
+      },
+      "summary": {
+        "en": "The open-source stand-in for Google Play services, from the microG project itself. Download the file named com.google.android.gms-(number).apk, and the small com.android.vending one beside it.",
+        "ar": "البديل مفتوح المصدر لخدمات Google Play، من مشروع microG نفسه. نزّل الملف المسمّى com.google.android.gms-(رقم).apk، ومعه الملف الصغير com.android.vending."
+      },
+      "source": {
+        "url": "https://github.com/microg/GmsCore/releases/latest"
+      },
+      "note": {
+        "en": "It is also in the launcher's own Store, on Get the essentials. Limits on this car: the car's system has no signature spoofing, so Google's own apps (YouTube, Maps, the Play Store) still refuse it; it helps apps that only ask for Google services, mainly for notifications. Not tried on the car yet. This page cannot remove it afterwards: use the launcher's Store, My apps.",
+        "ar": "موجود أيضاً في متجر اللانشر نفسه ضمن «حمّل الأساسيات». حدوده على هذه السيارة: نظام السيارة لا يدعم انتحال التوقيع، فتطبيقات Google نفسها (يوتيوب والخرائط ومتجر بلاي) ترفضه؛ يفيد التطبيقات التي تطلب خدمات Google فقط، غالباً للإشعارات. لم يُجرَّب على السيارة بعد. هذه الصفحة لا تستطيع إزالته بعد ذلك: استخدم متجر اللانشر، تطبيقاتي."
+      },
+      "openSource": true,
+      "googleServices": "none",
+      "packages": []
+    },
+    {
       "id": "f-droid",
       "name": {
         "en": "F-Droid",
