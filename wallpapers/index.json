@@ -136,6 +136,39 @@
  ],
  "packs": [
   {
+   "id": "mona-lisa",
+   "nameEn": "Mona Lisa",
+   "nameAr": "الموناليزا",
+   "group": "cinema",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-mona-lisa.thumb.jpg",
+   "centre": {
+    "file": "pack-mona-lisa-centre.jpg",
+    "sha256": "2e29a511f197093a7d6acbf100ec3f121b2ac5c7a4685bfa28b451c5319cb6a5",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-mona-lisa-strip.jpg",
+    "sha256": "17851f15c2deeffdbc59e6190486332a98b18809f5fece1df9a7edb60eb5adea",
+    "width": 4032,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-mona-lisa-roof.jpg",
+    "sha256": "4e9dc4217579052012965f9498bddb7d4ecb667b78f64bb6c8babc9dc736d091",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-mona-lisa-climate.jpg",
+    "sha256": "fca7f7ce59944547c569c1213bbb7db9a426188f2dd7a1ed2968d23899211532",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
    "id": "flight-deck",
    "nameEn": "Flight deck at dusk",
    "nameAr": "قمرة القيادة عند الغسق",

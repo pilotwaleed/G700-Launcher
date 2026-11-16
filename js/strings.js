@@ -3,7 +3,7 @@
 
 export const STRINGS = {
   en: {
-    "brand.name": "Waleed Al Ansari Launcher",
+    "brand.name": "MONALIZA Launcher",
     "brand.sub": "for Jetour G700",
     "tab.connect": "Connect",
     "tab.install": "Install / Update",
@@ -295,7 +295,7 @@ export const STRINGS = {
   },
 
   ar: {
-    "brand.name": "لانشر وليد الأنصاري",
+    "brand.name": "لانشر MONALIZA",
     "brand.sub": "لسيارة جيتور G700",
     "tab.connect": "الاتصال",
     "tab.install": "التثبيت / التحديث",
