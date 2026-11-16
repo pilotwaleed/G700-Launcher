@@ -151,8 +151,8 @@
    },
    "strip": {
     "file": "pack-flight-deck-strip.jpg",
-    "sha256": "1bd5ffd4b5bf1c4ddf15955f6bd77230e3c516f9f9291cb9d12d50a7a07c23b3",
-    "width": 2460,
+    "sha256": "4b1bdd0cecd95033b93dca41429f76a777bb1a47eb5eb3d018975c23b5616179",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -184,8 +184,8 @@
    },
    "strip": {
     "file": "pack-wing-sunrise-strip.jpg",
-    "sha256": "d96f88d0f99e576e3ebd21045acc2d3d0f45243a231f3185e0e4442e79b52df6",
-    "width": 2460,
+    "sha256": "62cc7e10f9a4c2a3cf487725eeab9237ce2a0acb11a1d573be160d0498aaf4c9",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -217,8 +217,8 @@
    },
    "strip": {
     "file": "pack-final-approach-strip.jpg",
-    "sha256": "14a284ee014fc3e32a18d567d498bd931206ca03b55911a270029638fe5f7f43",
-    "width": 2460,
+    "sha256": "12f9e0106debae9fc9c919ff661714dd9ffaf82f5496a43401a63b0fc0e9d637",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -250,8 +250,8 @@
    },
    "strip": {
     "file": "pack-jet-apron-strip.jpg",
-    "sha256": "cee3ec97c8e899a6e13837a074f0ab4ea085f8386fc28e0b82a23c37870592b6",
-    "width": 2460,
+    "sha256": "b115decfc70f5b1d06159acdf274df71815e96fa9231b09b197f26d32f73e0e3",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -283,8 +283,8 @@
    },
    "strip": {
     "file": "pack-golden-contrails-strip.jpg",
-    "sha256": "6b300a63af2dd24326715bcd3a731bdf4869feb79a9997e4a264029ef2b479af",
-    "width": 2460,
+    "sha256": "569c3bfacc95b1130d4e7f061fbd3a2f6b453e239866128eface245562101c10",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -316,8 +316,8 @@
    },
    "strip": {
     "file": "pack-cloud-sea-strip.jpg",
-    "sha256": "07a8a54df10fe98b63e56895c624db7822d420a92bf6028a54b4678edf5fddce",
-    "width": 2460,
+    "sha256": "8070d200c9465ba2259570671fab1aa7675770e291f80d301f25b8dcb464c8d4",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -349,8 +349,8 @@
    },
    "strip": {
     "file": "pack-aurora-peaks-strip.jpg",
-    "sha256": "1011a4127b0625d67d70a3d2cc5b28ff568d16de37aea42304aab857174fd417",
-    "width": 2460,
+    "sha256": "2f8292992277420d0f14a1ef44d1727d926450e4cb91911e9d16cfdae55926d2",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -382,8 +382,8 @@
    },
    "strip": {
     "file": "pack-canyon-galaxy-strip.jpg",
-    "sha256": "35f5bda8492e04b0a9dbbf6cbe3b77d49f1d348f66ce02f196c64cedebbf6ac0",
-    "width": 2460,
+    "sha256": "70388fd6172d8363f13af809e4e48f10a2d47f743646fe514dc8c4397b8238b7",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -415,8 +415,8 @@
    },
    "strip": {
     "file": "pack-deep-nebula-strip.jpg",
-    "sha256": "0ecd7c925267689e8e786a5908a3d5ed8bd365b9d569be369ac963852dd7f8e7",
-    "width": 2460,
+    "sha256": "040683db7c326c64c78ce9a5b3997bdb863c8c6cc94c0f278c5dc08e62667007",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -448,8 +448,8 @@
    },
    "strip": {
     "file": "pack-earth-night-strip.jpg",
-    "sha256": "e6047636acca94b88c4f6b8b1ff2c9b0b21e263651b7e1d257e388890ed1074e",
-    "width": 2460,
+    "sha256": "886c9ac3362a7b5e1eaa474f9bd3add13b15c876a216fc65dba4a2d9684fe7be",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -481,8 +481,8 @@
    },
    "strip": {
     "file": "pack-storm-sea-strip.jpg",
-    "sha256": "c4089c2c54eac279fe16c6c3ee1ef09803445ba3d1e2b1399277cb1e1c7930ac",
-    "width": 2460,
+    "sha256": "8d07749737e38986ea114e3ea48c216dbb355da46d6dce670a983d22e1a370f0",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -514,8 +514,8 @@
    },
    "strip": {
     "file": "pack-moonrise-cliffs-strip.jpg",
-    "sha256": "ac033454bd0877ca92f62a57e5e3c4c0e64f6d06797b1247a8d5ce08c8f38baa",
-    "width": 2460,
+    "sha256": "4d061bbdc56c91dc243dd4e9a7b5379e533bfa5608b0ba8c10107c55bb5f13bc",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -547,8 +547,8 @@
    },
    "strip": {
     "file": "pack-indigo-dunes-strip.jpg",
-    "sha256": "d714d1f40abb035b23ccc1479623466a4c4ac836d04071d8da02c64495660337",
-    "width": 2460,
+    "sha256": "b027de65a75f5fb91f8f5e00590cb75f77b42d5de9abaef52f4ec12d8971138f",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -580,8 +580,8 @@
    },
    "strip": {
     "file": "pack-lava-fields-strip.jpg",
-    "sha256": "91808e8c651d579ad4740eb8a89cc36e702249f94d4fbdaac517622006052a9a",
-    "width": 2460,
+    "sha256": "5ef8e9c820aefaf5d0e0199a027ab80c7977c98bb56c49d353a3d2280f4ba4aa",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -613,8 +613,8 @@
    },
    "strip": {
     "file": "pack-ice-cave-strip.jpg",
-    "sha256": "da533833469d07f86c7e879d7a1de5697fb678d87c0dc13c5e0180e4b5939138",
-    "width": 2460,
+    "sha256": "8f107221c668b23a45c7f9ef378bcf7c2fb1be691501be4a60d0d7782e7c6195",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -646,8 +646,8 @@
    },
    "strip": {
     "file": "pack-glacier-lagoon-strip.jpg",
-    "sha256": "efa32e2f40248c54c71b5dedd0590af00611f282c9d9b8fe49b05a21a72c2d4a",
-    "width": 2460,
+    "sha256": "301f6bf145800856da843fc703ceed11870fb77f9bec8081b25371f1e056a623",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -679,8 +679,8 @@
    },
    "strip": {
     "file": "pack-emerald-road-strip.jpg",
-    "sha256": "78619fb6f5fe3abbf43c0574fef58e2b1e0ed5fa27594831c0d80ebbba3d10b0",
-    "width": 2460,
+    "sha256": "d40795e6e1b85227332119d760f4e795a5425d3a32a9ea239c61bdac640b2f6b",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -712,8 +712,8 @@
    },
    "strip": {
     "file": "pack-autumn-pass-strip.jpg",
-    "sha256": "067d36ad28c6bdb903deb996a3a32ead8d88e51b7d2d0a42aa3badb617c994cb",
-    "width": 2460,
+    "sha256": "b71d7fa0f5ada73dec353587d9205596a1c61de78f4a1b2df0be31c20a20eb88",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -745,8 +745,8 @@
    },
    "strip": {
     "file": "pack-city-arteries-strip.jpg",
-    "sha256": "b0309931f59b3871a8dd86cbe237643161073e86b87a4fc48d089b467308dad7",
-    "width": 2460,
+    "sha256": "fd130946d960f49924be09158a07d27f4c34f67675d4ed8cd4b191794e0069aa",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -778,8 +778,8 @@
    },
    "strip": {
     "file": "pack-blue-hour-domes-strip.jpg",
-    "sha256": "c8b9094ce1a6c02fee7fdeb8781261ee5419c681d25c7e6b9c1f086d5d30ab00",
-    "width": 2460,
+    "sha256": "1b8e96e72d1d6119b21b7165c99793c4acd63c3bb3e72d3569b69cbd8f416dfe",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -811,8 +811,8 @@
    },
    "strip": {
     "file": "pack-night-circuit-strip.jpg",
-    "sha256": "7c6f34e817985721c22b632e5f94ff3abb8137609ca02514ce7e2e4212ec1f05",
-    "width": 2460,
+    "sha256": "46e535cc57d5bf27606dfbecbd5d6167d0440f7ea559131118fb0db410419c2d",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -844,8 +844,8 @@
    },
    "strip": {
     "file": "pack-neon-rain-strip.jpg",
-    "sha256": "785afbebe030aea933333a480ac1631dc46dce25f0ac14f22871ecd590cda87e",
-    "width": 2460,
+    "sha256": "0edada46832671cb5b0287face135013c02e34a5b62330a014f4ef7c31ebb1c7",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -877,8 +877,8 @@
    },
    "strip": {
     "file": "pack-twin-moons-strip.jpg",
-    "sha256": "00d12c7ee90132b002bcd70ea4e172632f560e825e2a77a43501437b41c974c7",
-    "width": 2460,
+    "sha256": "6ffca3687573899b72031ed844aad174a383119010b3dca4ce831d3199b65368",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -910,8 +910,8 @@
    },
    "strip": {
     "file": "pack-synthwave-sun-strip.jpg",
-    "sha256": "9f9e8a2c7239c69a694f3527005e7d44b6f49937026af1cac570d3c23d633d6b",
-    "width": 2460,
+    "sha256": "7f1d282788c5b99b2a0afbf5ba038b5e472aa4a6b424150b98bb801f77a13eef",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -943,8 +943,8 @@
    },
    "strip": {
     "file": "pack-summer-sky-strip.jpg",
-    "sha256": "144b41106ade459c75623deab0041af84343b97b8d46542e2f8b7511b70a455e",
-    "width": 2460,
+    "sha256": "fea8c00bda347a756988f9b99d9ef1f1a9b740040ef578369f156e9991daa058",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -976,8 +976,8 @@
    },
    "strip": {
     "file": "pack-comet-city-strip.jpg",
-    "sha256": "d322daf42da37afdacc185f5b545182f24ce9c53e40d5866ed8b4886954d89ae",
-    "width": 2460,
+    "sha256": "13c0fe9fc97d804b3ac3c2487faaaa6d9bd0c99a4c33c5002e9cea17dc372acc",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -1009,8 +1009,8 @@
    },
    "strip": {
     "file": "pack-paper-mountains-strip.jpg",
-    "sha256": "76e28beb78486e6656b9dc2f92f1c2398e0422eac5874098df188a7e29d1aa88",
-    "width": 2460,
+    "sha256": "281dab7c897a0050c1280f70a8d42e10f54b926fe3abfa1d6fd8ade873ec851a",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -1042,8 +1042,8 @@
    },
    "strip": {
     "file": "pack-copper-carbon-strip.jpg",
-    "sha256": "7fbc3e67be45398de66507dc56f2ee3a3222f1d0fd7f315f2f7d57b7a406ca9e",
-    "width": 2460,
+    "sha256": "3b6918a8c559020b1f8d088d8d28f3abd3d73a50c104091744a9965f94acaff6",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -1075,8 +1075,8 @@
    },
    "strip": {
     "file": "pack-liquid-chrome-strip.jpg",
-    "sha256": "d3971c844a1624d8495ff1a75613efee87d308f0fcbe83280cb5294a6aad082a",
-    "width": 2460,
+    "sha256": "b3c53772e116326568b4a05a3c69112b10de894ef5db1b9bf588680ada98788d",
+    "width": 4032,
     "height": 284
    },
    "roof": {
@@ -1108,8 +1108,8 @@
    },
    "strip": {
     "file": "pack-crystal-prisms-strip.jpg",
-    "sha256": "e2d52698429bcaa9a794ff4ee117152f434b011a3f2b6644f37832afeef2eb98",
-    "width": 2460,
+    "sha256": "63ce80a2b678b24c02f61aa759d3df2ce941e31f2153df2d7fe728fa2f0f7965",
+    "width": 4032,
     "height": 284
    },
    "roof": {
