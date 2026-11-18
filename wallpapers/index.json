@@ -1751,6 +1751,138 @@
     "width": 1920,
     "height": 480
    }
+  },
+  {
+   "id": "contrail-dusk",
+   "nameEn": "Contrails at dusk",
+   "nameAr": "خيوط الغسق",
+   "group": "aviation",
+   "tone": "dark",
+   "live": "stars",
+   "thumb": "pack-contrail-dusk.thumb.jpg",
+   "centre": {
+    "file": "pack-contrail-dusk-centre.jpg",
+    "sha256": "1ab4c73ed9b227b4141b802620d16dcbac7f0a71a160e9f22665f3b248a00fee",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-contrail-dusk-strip.jpg",
+    "sha256": "87acd6867bd3855ac2ecce1388554ea38e8d39eb7ac01b62b565731c7c6e743c",
+    "width": 4032,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-contrail-dusk-roof.jpg",
+    "sha256": "4bc31820e2cd4bda822ee556f74dc4f6afa82fc3c3de7763486f7e923f3ab4d0",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-contrail-dusk-climate.jpg",
+    "sha256": "119b02ed883860cc4435978ffd05951971a967f18f50440aea8970373fb7bca9",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "manama-blue-hour",
+   "nameEn": "Manama blue hour",
+   "nameAr": "المنامة وقت المغرب",
+   "group": "city",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-manama-blue-hour.thumb.jpg",
+   "centre": {
+    "file": "pack-manama-blue-hour-centre.jpg",
+    "sha256": "819297ce8cbfb4d68a0b90c365aa37cf6b1dbac21b83789f90ed378a611440ca",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-manama-blue-hour-strip.jpg",
+    "sha256": "3caa03b7bc2e3a5347f0eaa459b7c8103fb7e657b5db7e38e5e32876beff2f79",
+    "width": 4032,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-manama-blue-hour-roof.jpg",
+    "sha256": "694c4016134194039f23acc90446afadc2d4a5fa6148cd8e3bc46640529787ba",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-manama-blue-hour-climate.jpg",
+    "sha256": "4c9c6c8c81240e501ed12a4b84b132d4a9f1ef576c7a4c0ee3d884236605e5e9",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "bahrain-fort",
+   "nameEn": "Bahrain fort at sunset",
+   "nameAr": "قلعة البحرين",
+   "group": "nature",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-bahrain-fort.thumb.jpg",
+   "centre": {
+    "file": "pack-bahrain-fort-centre.jpg",
+    "sha256": "cc1810b417c0b7ec125fe4b4fc7379be476125cfa9163fd32c8101c797282b9c",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-bahrain-fort-strip.jpg",
+    "sha256": "f9e3bd62af974e00e81d4927aea25ddc0edeb1e632d106f6291df94da5bfc092",
+    "width": 4032,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-bahrain-fort-roof.jpg",
+    "sha256": "30f9b5492a196428404723ccbd26fbc56fa46e23166c1b6d59d692a81ac89e82",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-bahrain-fort-climate.jpg",
+    "sha256": "74726e7c552fac9c90618a75e61b91c8b26512acfe5ba88d1c48baee390680be",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "light-trails",
+   "nameEn": "Desert light trails",
+   "nameAr": "خطوط الضوء",
+   "group": "city",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-light-trails.thumb.jpg",
+   "centre": {
+    "file": "pack-light-trails-centre.jpg",
+    "sha256": "2ea8ac4dbdd88b9fc401dec1a0e4fb5268830763f5854045961bdbd99beff38e",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-light-trails-strip.jpg",
+    "sha256": "b12bc8f934608de670c8f59857f55c70ecc1d82171040d3be98094be970be793",
+    "width": 4032,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-light-trails-roof.jpg",
+    "sha256": "debb4052d0630ec79667490c6bb641c65874d3961d841cf8db6f6c75f5980f7f",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-light-trails-climate.jpg",
+    "sha256": "685ef8271036c6eb716669b6b34e162e5c87843bb93347fb03008bd9600a8a52",
+    "width": 1920,
+    "height": 480
+   }
   }
  ]
 }
