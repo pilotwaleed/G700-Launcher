@@ -151,7 +151,7 @@
    },
    "strip": {
     "file": "pack-mona-lisa-strip.jpg",
-    "sha256": "17851f15c2deeffdbc59e6190486332a98b18809f5fece1df9a7edb60eb5adea",
+    "sha256": "41f6c10a15f6ac18a640cf3508e46ab904d4786707d86f3f45e0fa5485094de2",
     "width": 4032,
     "height": 284
    },
@@ -164,6 +164,204 @@
    "climate": {
     "file": "pack-mona-lisa-climate.jpg",
     "sha256": "fca7f7ce59944547c569c1213bbb7db9a426188f2dd7a1ed2968d23899211532",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "dune-sunset",
+   "nameEn": "Dune sunset",
+   "nameAr": "غروب الكثبان",
+   "group": "nature",
+   "tone": "dark",
+   "live": "motes",
+   "thumb": "pack-dune-sunset.thumb.jpg",
+   "centre": {
+    "file": "pack-dune-sunset-centre.jpg",
+    "sha256": "c74a1c93802e75179a744a7abeec6fffa846750e82aa4bf185f4a27239342b8f",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-dune-sunset-strip.jpg",
+    "sha256": "0ff11dfaac7942740ca566c35067380987ef585308306ccdb2eb062167caa037",
+    "width": 4032,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-dune-sunset-roof.jpg",
+    "sha256": "bfc9f6effbfbfcfb05b0723229d73534d1b7b98cb41f762c9ba31d299231ae05",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-dune-sunset-climate.jpg",
+    "sha256": "d08524bd740ec7263e535175f920a4d4cfb7d2e4405712f41341761b9f7ef788",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "cruise-dawn",
+   "nameEn": "Dawn cruise",
+   "nameAr": "تحليق الفجر",
+   "group": "aviation",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-cruise-dawn.thumb.jpg",
+   "centre": {
+    "file": "pack-cruise-dawn-centre.jpg",
+    "sha256": "6ba3ae02797f2c8ab3de39c2ca8e807f3671e8c4672af602d8bb1c662a30f413",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-cruise-dawn-strip.jpg",
+    "sha256": "17421f4779cdaed661df30102647b24e02da7301cd2113d783bc14c769362bb9",
+    "width": 4032,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-cruise-dawn-roof.jpg",
+    "sha256": "9dbc50aec4a19262fde0b716d1f8714ee4e9f2b09fe66107fab6ecfd8144e304",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-cruise-dawn-climate.jpg",
+    "sha256": "1baae60a5d7e744b0aa5972fbf4a4ab4d614c73067f1c5dace6b2e93cd95f7db",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "gulf-dhow",
+   "nameEn": "Gulf dhow",
+   "nameAr": "سفينة الخليج",
+   "group": "nature",
+   "tone": "dark",
+   "live": "stars",
+   "thumb": "pack-gulf-dhow.thumb.jpg",
+   "centre": {
+    "file": "pack-gulf-dhow-centre.jpg",
+    "sha256": "40afd7849bec8835c6e28aff3679ce4c01de93e9726135a3a5dbd9d235188451",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-gulf-dhow-strip.jpg",
+    "sha256": "c19e63c32694ca3594c868cbe997c6fac28c3b3a9c11d4e8a5e78c9aed23dc10",
+    "width": 4032,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-gulf-dhow-roof.jpg",
+    "sha256": "0a8ddd7db3faa63fa55beb54b19c255c44aacb9f90bba7d33c6049821394d6ae",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-gulf-dhow-climate.jpg",
+    "sha256": "358342f7e9d64b8c0205ccc74306db7f6d7ef99c6ac81a134831a1292f3f2145",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "gulf-city-night",
+   "nameEn": "Gulf city at night",
+   "nameAr": "مدينة الخليج ليلاً",
+   "group": "city",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-gulf-city-night.thumb.jpg",
+   "centre": {
+    "file": "pack-gulf-city-night-centre.jpg",
+    "sha256": "fbbdb3b264bd7610c9399739684564394cf9ff54d023c713657352cc9b33c562",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-gulf-city-night-strip.jpg",
+    "sha256": "72b8d54a7dd0adc6ec52f8a88fb6d5ce15d01553ef12f8b6ac5811e0461a3d71",
+    "width": 4032,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-gulf-city-night-roof.jpg",
+    "sha256": "6f4112c62e172de917c3b93deeea42d84b98f18434f9ca9b9f5c796f6828d7f6",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-gulf-city-night-climate.jpg",
+    "sha256": "7121c2e98a0ca2f6b43079362c1861b839be156dc71a8ba24d22d1512f8dc025",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "leonardo-valley",
+   "nameEn": "Leonardo's valley",
+   "nameAr": "وادي ليوناردو",
+   "group": "cinema",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-leonardo-valley.thumb.jpg",
+   "centre": {
+    "file": "pack-leonardo-valley-centre.jpg",
+    "sha256": "f1ec38739f118b17e409a16cff96a86c224aae7cd4ad0cd381624ad661cf8beb",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-leonardo-valley-strip.jpg",
+    "sha256": "0d1dbb9bd895f66841692cdc19fe1083e1a42661453e6d4cd6e57d2209480fa6",
+    "width": 4032,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-leonardo-valley-roof.jpg",
+    "sha256": "df424f3b2c99fea7d94ecd7f33b0c66653cc9b6ee120c8563ffe8190b8348aa0",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-leonardo-valley-climate.jpg",
+    "sha256": "3caf6b564a68e2c6fcfcaf673675ffec196d5abaec807b676d2bf4bfb7519045",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "orbit-sunrise",
+   "nameEn": "Orbital sunrise",
+   "nameAr": "شروق من المدار",
+   "group": "sky",
+   "tone": "dark",
+   "live": "stars",
+   "thumb": "pack-orbit-sunrise.thumb.jpg",
+   "centre": {
+    "file": "pack-orbit-sunrise-centre.jpg",
+    "sha256": "40de7809f4ffb07f95f1d73f1fbf0a79be3a868b23a5194f2beaf3df8beab447",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-orbit-sunrise-strip.jpg",
+    "sha256": "6b6adb8ea327a60884f835f6ea3a4877702da99d664094ccaa4b465503bda1d9",
+    "width": 4032,
+    "height": 284
+   },
+   "roof": {
+    "file": "pack-orbit-sunrise-roof.jpg",
+    "sha256": "947a41a15e3990041f6e3d9351ae7fd08425ab7849c9534a376bf87f98274d32",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-orbit-sunrise-climate.jpg",
+    "sha256": "1c6b54bb30b7c9f4e787ee991f6b9371dfe238aaba2fb1532df92f6e83165691",
     "width": 1920,
     "height": 480
    }
@@ -316,7 +514,7 @@
    },
    "strip": {
     "file": "pack-golden-contrails-strip.jpg",
-    "sha256": "1e1297bf7cb4d9d8f5e105de8473a2443417969f5d2825e51b916791ea9a67f9",
+    "sha256": "6a3698959814b02d69d604a7c02731fb043f311c9a79ddff7818afe1e00dba23",
     "width": 4032,
     "height": 284
    },
@@ -877,7 +1075,7 @@
    },
    "strip": {
     "file": "pack-neon-rain-strip.jpg",
-    "sha256": "8ac72545136f43ccdbd1e2872c3f8975d1420ddb0cacada923c0c70b6f161ea4",
+    "sha256": "d98f86ac11cc19d5895762a413a78759d791d47a6641e3e1a0f0f2165f29a7ba",
     "width": 4032,
     "height": 284
    },
@@ -1240,7 +1438,7 @@
    },
    "strip": {
     "file": "pack-desert-stars-strip.jpg",
-    "sha256": "baaf72da0f3ddc2fac458b2bf3afd01d60af627bc5d823e2173bca65d259d99d",
+    "sha256": "baa6279910555d8b751bb26e2019ac2f048e8989021e18b544bacee088fc0448",
     "width": 4032,
     "height": 284
    },
@@ -1339,7 +1537,7 @@
    },
    "strip": {
     "file": "pack-coast-road-strip.jpg",
-    "sha256": "cc6931dcae1ce7a86df86a95f9f16c8d43643ed85346c388252fa804ebc9a1b0",
+    "sha256": "6cf4cec1c82e02ceef1df21dc5c01210418a82a1efd217aaa02475cf9ced7e14",
     "width": 4032,
     "height": 284
    },
