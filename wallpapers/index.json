@@ -135,7 +135,119 @@
    "tone": "light"
   }
  ],
+ "collections": [
+  {
+   "id": "bahrain-national-day",
+   "nameEn": "Bahrain National Day",
+   "nameAr": "العيد الوطني البحريني"
+  }
+ ],
  "packs": [
+  {
+   "id": "bahrain-flag",
+   "nameEn": "Flag of Bahrain",
+   "nameAr": "علم البحرين",
+   "group": "cinema",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-bahrain-flag.thumb.jpg",
+   "collection": "bahrain-national-day",
+   "centre": {
+    "file": "pack-bahrain-flag-centre.jpg",
+    "sha256": "7cc3db740e6067528251a48990816a0fb15e3abc449a0ea2c35a1c2b1efc37b7",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-bahrain-flag-strip.jpg",
+    "sha256": "533bf6e300221642044d77683c326b4288ed736e9d25bc32d3cd4b57cc77af5c",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
+   "roof": {
+    "file": "pack-bahrain-flag-roof.jpg",
+    "sha256": "c12030bd20a45372942313ac5c9c7826f3af1380e371b7d7c5a118f6c5ef4427",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-bahrain-flag-climate.jpg",
+    "sha256": "f327c599e4675e283c6f4d28a52b37cbe3fdd13ecdac6d1927ced48aa99f6658",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "bahrain-horseman",
+   "nameEn": "Horseman of Bahrain",
+   "nameAr": "فارس البحرين",
+   "group": "nature",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-bahrain-horseman.thumb.jpg",
+   "collection": "bahrain-national-day",
+   "centre": {
+    "file": "pack-bahrain-horseman-centre.jpg",
+    "sha256": "a542c74cdb647e23b60486eddb316a87ecbe2f32fe60ebd8fd95fe8980e1d3c4",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-bahrain-horseman-strip.jpg",
+    "sha256": "34cffb08cbfda5de9be0c693a85ab3756179cdffd8903ab59ed72cfa61dc2d4e",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
+   "roof": {
+    "file": "pack-bahrain-horseman-roof.jpg",
+    "sha256": "e18b18907e20e0ee807bc3ce0be43e26d63085509ad567a4539309fbd7e63024",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-bahrain-horseman-climate.jpg",
+    "sha256": "3eae19bfc4eeb87dd94c6a759dc91dd751fa1305e489ac920dd92883a638aeb0",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "manama-celebrates",
+   "nameEn": "Manama celebrates",
+   "nameAr": "المنامة تحتفل",
+   "group": "city",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-manama-celebrates.thumb.jpg",
+   "collection": "bahrain-national-day",
+   "centre": {
+    "file": "pack-manama-celebrates-centre.jpg",
+    "sha256": "98b85ede1b03dbcf0d0bcf9abc3748016dfcc5c3285a4d919d47971709f67b40",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-manama-celebrates-strip.jpg",
+    "sha256": "d4dbcef18cc0f074f806e4582ebfdb780938e3b594741d27a27784881a4ef725",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
+   "roof": {
+    "file": "pack-manama-celebrates-roof.jpg",
+    "sha256": "49a6769e90e68101380dcca0a1960fb1efb9ab91b5267a5a16d7ed730298d9f7",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-manama-celebrates-climate.jpg",
+    "sha256": "c6456e54e0b745641c496c2db4d8f3050ee3d80ca1ac9c52f4968e67fbe7f554",
+    "width": 1920,
+    "height": 480
+   }
+  },
   {
    "id": "mona-lisa",
    "nameEn": "Mona Lisa",
