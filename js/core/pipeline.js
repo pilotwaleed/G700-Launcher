@@ -5,6 +5,8 @@
 // Device interface:
 //   shell(command: string) -> Promise<{output: string, exitCode: number|null}>
 //   push(devicePath: string, blob: Blob, onProgress?: (sent, total) => void) -> Promise<void>
+//   tcpip(port: number) -> Promise<{output: string, exitCode: number, back: boolean, listening: boolean}>
+//     asks the car's ADB to listen on the admin link's port and gets the car back after ADB restarts
 import { cmd } from "./tokens.js";
 import { assertManageable } from "./package-guard.js";
 import { parseDumpsysPackage, parsePackageList, listContainsPackage, parseCurrentUser, runtimeStatesFor } from "./dumpsys-package.js";
@@ -61,6 +63,36 @@ async function applyLauncherGrants(dev, report, journal) {
   journal.dozeWhitelist = true;
 }
 
+/**
+ * g700ctl.py start_admin_listener(): the LAST step of install and repair, and only when the owner ticked it (g700ctl's
+ * `--admin-link`): it makes the car's debugging listen on port 5555 on the car's networks, not only inside the car, so
+ * it is his decision and never a default. The launcher's admin link connects to the
+ * car's own ADB at 127.0.0.1:5555, and nothing listens there until ADB is told to (measured on the car, 2026-11-24:
+ * persist.adb.tcp.port=5555 was set and the port stayed closed until `adb tcpip 5555` was run over USB). ADB restarts
+ * when asked, which drops this connection — so everything else, the car's copy of the journal included, is done first.
+ * A refusal, a car that is slow to return or a port it does not confirm is a skip that is said and journaled, never an
+ * abort: the install itself is complete. Uninstall does not undo it; the listener belongs to the car's ADB.
+ */
+async function startAdminLink(dev, report, journal, journalStore, deviceKey) {
+  const id = "admin-link";
+  const port = LAUNCHER.adminLinkPort;
+  const command = `tcpip:${port}`;
+  report({ id, status: "running", command });
+  let reply;
+  try {
+    reply = await dev.tcpip(port);
+  } catch (error) {
+    reply = { output: String(error?.message ?? error), exitCode: 1, back: false, listening: false };
+  }
+  const ok = reply.exitCode === 0;
+  const back = reply.back === true;
+  const listening = reply.listening === true;
+  journal.adbTcp = { port, ok, deviceBack: back, listening, output: clip(reply.output) };
+  journalStore.amendLast(deviceKey, journal);
+  const detail = !ok ? "refused" : !back ? "not-back" : !listening ? "unconfirmed" : "listening";
+  report({ id, status: detail === "listening" ? "pass" : "skip", command, output: reply.output, detail });
+}
+
 /** The ordered step ids of each pipeline, so the UI can draw the checklist before anything runs. */
 export const INSTALL_STEPS = Object.freeze([
   "verify", "existing", "push", "install", "confirm",
@@ -70,14 +102,19 @@ export const INSTALL_STEPS = Object.freeze([
 export const REPAIR_STEPS = Object.freeze([
   "existing", ...LAUNCHER_GRANTS.map(([, name]) => `grant:${name}`), "doze", "killswitch", "journal-local", "launch",
 ]);
+/** The admin link's listener: a step only when the owner ticked it, and then the last one. */
+export const ADMIN_LINK_STEP = "admin-link";
+export const installSteps = (adminLink = false) => (adminLink === true ? [...INSTALL_STEPS, ADMIN_LINK_STEP] : [...INSTALL_STEPS]);
+export const repairSteps = (adminLink = false) => (adminLink === true ? [...REPAIR_STEPS, ADMIN_LINK_STEP] : [...REPAIR_STEPS]);
 export const UNINSTALL_STEPS = Object.freeze(["existing", "force-stop", "listener", "doze-remove", "uninstall", "journal-local"]);
 
 /**
  * Install or update the launcher.
- * @param options {dev, report, apk: {blob: Blob, name: string}, expectedSha256: string|null, journalStore, deviceKey, now?}
+ * @param options {dev, report, apk: {blob: Blob, name: string}, expectedSha256: string|null, journalStore, deviceKey, now?, adminLink?}
+ *   adminLink = true only when the owner ticked "Also switch on the admin link"; anything else leaves the car's ADB alone.
  *   expectedSha256 = the published digest from latest.json; null only for a local APK the owner explicitly accepted.
  */
-export async function installLauncher({ dev, report, apk, expectedSha256, journalStore, deviceKey, now }) {
+export async function installLauncher({ dev, report, apk, expectedSha256, journalStore, deviceKey, now, adminLink = false }) {
   // 1. verify the artifact before anything touches the car
   report({ id: "verify", status: "running" });
   const digest = await sha256Hex(apk.blob);
@@ -129,7 +166,9 @@ export async function installLauncher({ dev, report, apk, expectedSha256, journa
   await applyLauncherGrants(dev, report, journal);
   await shellStep(dev, report, "killswitch", cmd.rmForce(LAUNCHER.killSwitch));
 
-  // 9. journal here and on the car
+  // 9. journal here and on the car. When the listener was asked for, the car's copy is written before its ADB restarts
+  //    (step 11), so it records the listener as planned; this browser's copy is completed with what happened.
+  journal.adbTcp = adminLink === true ? { port: LAUNCHER.adminLinkPort, planned: true } : { asked: false };
   const stored = journalStore.append(deviceKey, journal);
   report({ id: "journal-local", status: stored ? "pass" : "skip", detail: stored ? "stored" : "memory-only" });
   report({ id: "journal-device", status: "running", command: cmd.mkdirP(LAUNCHER.filesDir) });
@@ -143,11 +182,13 @@ export async function installLauncher({ dev, report, apk, expectedSha256, journa
 
   // 10. launch
   await shellStep(dev, report, "launch", cmd.amStart(LAUNCHER.activity));
+  // 11. last, and only when the owner ticked it: the admin link's listener (ADB restarts)
+  if (adminLink === true) await startAdminLink(dev, report, journal, journalStore, deviceKey);
   return { journal, before, after };
 }
 
 /** Re-apply the grants. No reinstall, no data loss. */
-export async function repairLauncher({ dev, report, journalStore, deviceKey, now }) {
+export async function repairLauncher({ dev, report, journalStore, deviceKey, now, adminLink = false }) {
   report({ id: "existing", status: "running", command: cmd.listPackage(LAUNCHER.package) });
   const state = await readLauncherState(dev);
   if (!state.installed) {
@@ -158,9 +199,11 @@ export async function repairLauncher({ dev, report, journalStore, deviceKey, now
   const journal = { tool: "web-installer repair", at: nowIso(now) };
   await applyLauncherGrants(dev, report, journal);
   await shellStep(dev, report, "killswitch", cmd.rmForce(LAUNCHER.killSwitch));
+  journal.adbTcp = adminLink === true ? { port: LAUNCHER.adminLinkPort, planned: true } : { asked: false };
   const stored = journalStore.append(deviceKey, journal);
   report({ id: "journal-local", status: stored ? "pass" : "skip", detail: stored ? "stored" : "memory-only" });
   await shellStep(dev, report, "launch", cmd.amStart(LAUNCHER.activity));
+  if (adminLink === true) await startAdminLink(dev, report, journal, journalStore, deviceKey);
   return { journal };
 }
 

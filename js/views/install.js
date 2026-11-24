@@ -1,7 +1,7 @@
 // Install / Update: one button, live checklist. The device work is core/pipeline.js installLauncher().
 import { t } from "../i18n.js";
 import { h, icon, ltr, note, clear, StepList, confirmDialog, toast, isApkFile } from "../ui.js";
-import { installLauncher, INSTALL_STEPS, PipelineAbort } from "../core/pipeline.js";
+import { installLauncher, installSteps, PipelineAbort } from "../core/pipeline.js";
 import { LAUNCHER_GRANTS } from "../core/grant-plan.js";
 import { sha256Hex, sameDigest, formatBytes } from "../core/version.js";
 import { viewHead, panel, describeLauncherStep, requireConnection, abortMessage, shortGrantName } from "./shared.js";
@@ -12,6 +12,8 @@ let local = null; // {file, sha256: string|null}
 let outcome = null; // {kind: "ok"|"bad"|"warn", text: () => string} — a function so it follows the language
 let steps;
 let sourceBox, button, outcomeBox, idleHint, fileInput;
+// "Also switch on the admin link": the owner's choice, unticked until he ticks it (the car's debugging then listens on the car's networks).
+let adminLink, planLinkLine, planNot, planNotWithLink;
 
 export function init(root, appRef) {
   app = appRef;
@@ -22,6 +24,10 @@ export function init(root, appRef) {
   steps = new StepList(stepsBox, describeLauncherStep);
   button = h("button", { type: "button", class: "btn btn-primary btn-hero", on: { click: start } });
   fileInput = h("input", { type: "file", class: "file-input", accept: ".apk,application/vnd.android.package-archive", tabindex: "-1" });
+  adminLink = h("input", { type: "checkbox", on: { change: render } });
+  planLinkLine = h("li", { i18n: "install.plan.adminLink" });
+  planNot = h("p", { class: "faint", i18n: "install.plan.not" });
+  planNotWithLink = h("p", { class: "faint", i18n: "install.plan.notWithLink" });
   fileInput.addEventListener("change", () => {
     const file = fileInput.files[0];
     fileInput.value = "";
@@ -40,8 +46,11 @@ export function init(root, appRef) {
             h("li", { i18n: "install.plan.doze" }),
             h("li", { i18n: "install.plan.journal" }),
             h("li", { i18n: "install.plan.launch" }),
+            planLinkLine,
           ),
-          h("p", { class: "faint", i18n: "install.plan.not" }),
+          h("label", { class: "check" }, adminLink, h("span", { i18n: "install.adminLink.option" })),
+          planNot,
+          planNotWithLink,
         ),
       ),
       h("div", { class: "stack" },
@@ -132,6 +141,11 @@ export function render() {
   sourceBox.replaceChildren(h("div", { class: "source" }, publishedCard(), localCard()));
   clear(button).append(icon("download"), h("span", { text: app.launcher.installed ? t("install.buttonUpdate") : t("install.button") }));
   button.disabled = app.busy || !app.connected || !ready();
+  // The listener is in the plan only while it is ticked.
+  adminLink.disabled = app.busy;
+  planLinkLine.hidden = !adminLink.checked;
+  planNot.hidden = adminLink.checked;
+  planNotWithLink.hidden = !adminLink.checked;
   idleHint.hidden = !steps.isEmpty;
   outcomeBox.replaceChildren(...[
     !app.connected ? note("info", h("span", { text: t("common.connectFirst") })) : null,
@@ -156,7 +170,7 @@ async function downloadPublished(release, onProgress) {
   return new Blob(chunks, { type: "application/vnd.android.package-archive" });
 }
 
-function planDialogContent(unverified) {
+function planDialogContent(unverified, withLink) {
   return [
     unverified ? note("warn", h("span", { text: t("install.confirm.unverified") })) : null,
     h("ul", { class: "plan" },
@@ -165,9 +179,10 @@ function planDialogContent(unverified) {
       h("li", { text: t("install.plan.doze") }),
       h("li", { text: t("install.plan.journal") }),
       h("li", { text: t("install.plan.launch") }),
+      withLink ? h("li", { text: t("install.plan.adminLink") }) : null,
     ),
     h("ul", { class: "plan" }, LAUNCHER_GRANTS.map(([, name]) => h("li", {}, ltr(shortGrantName(name), "mono"), ` — ${t(`why.${shortGrantName(name)}`)}`))),
-    h("p", { class: "faint", text: t("install.plan.not") }),
+    h("p", { class: "faint", text: withLink ? t("install.plan.notWithLink") : t("install.plan.not") }),
   ];
 }
 
@@ -178,12 +193,14 @@ async function start() {
   const publishedDigest = release.state === "published" ? release.sha256 : null;
   // A local file is verified only when it is byte-identical to the published release.
   const expected = usingPublished ? publishedDigest : publishedDigest && sameDigest(local.sha256, publishedDigest) ? publishedDigest : null;
-  const confirmed = await confirmDialog({ titleKey: "install.confirm.title", okKey: "install.confirm.ok", content: planDialogContent(expected === null) });
+  // Read once: what the owner confirmed in the plan is what runs, whatever the box says later.
+  const withLink = adminLink.checked;
+  const confirmed = await confirmDialog({ titleKey: "install.confirm.title", okKey: "install.confirm.ok", content: planDialogContent(expected === null, withLink) });
   if (!confirmed) return;
 
   await app.exclusive(async () => {
     outcome = null;
-    steps.reset(["fetch", ...INSTALL_STEPS]);
+    steps.reset(["fetch", ...installSteps(withLink)]);
     render();
     try {
       let apk;
@@ -203,10 +220,12 @@ async function start() {
       }
       const result = await installLauncher({
         dev: app.dev, report: (step) => steps.update(step), apk, expectedSha256: expected,
-        journalStore: app.journalStore, deviceKey: app.deviceKey,
+        journalStore: app.journalStore, deviceKey: app.deviceKey, adminLink: adminLink.checked && withLink,
       });
       const skipped = result.journal.grants.filter((grant) => !grant.ok).length;
-      outcome = { kind: "ok", text: () => (skipped ? `${t("install.done")} ${t("install.doneSkips", { n: skipped })}` : t("install.done")) };
+      // Without the listener the admin link cannot connect on the car: said plainly, with how to switch it on.
+      const done = () => (withLink ? t("install.done") : `${t("install.doneNoLink")} ${t("install.adminLink.notStarted")}`);
+      outcome = { kind: "ok", text: () => (skipped ? `${done()} ${t("install.doneSkips", { n: skipped })}` : done()) };
     } catch (error) {
       outcome = { kind: "bad", text: () => abortMessage(error) };
     } finally {

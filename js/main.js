@@ -68,6 +68,7 @@ export const app = {
   dev: {
     shell: (command) => session.shell(command),
     push: (path, blob, onProgress) => session.push(path, blob, onProgress),
+    tcpip: (port) => session.tcpip(port),
   },
 
   userInstalled() {

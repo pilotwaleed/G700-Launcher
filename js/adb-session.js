@@ -5,10 +5,13 @@
 // It authenticates this browser to the car through the car's own "Allow USB debugging?" prompt. It is never
 // copied into the car or into the launcher; the launcher's helper link makes its own key on the car.
 import { Adb, AdbDaemonTransport, AdbDaemonWebUsbDeviceManager, AdbDaemonWebUsbDevice, AdbWebCredentialStore } from "../vendor/adb-engine.bundle.js";
-import { assertSafeCommand, assertDevicePath, WRITABLE_PATH_PREFIXES } from "./core/tokens.js";
+import { assertSafeCommand, assertDevicePath, WRITABLE_PATH_PREFIXES, cmd } from "./core/tokens.js";
 import { assertCommandTargetsAllowed } from "./core/package-guard.js";
+import { LAUNCHER } from "./core/grant-plan.js";
 
 const RC_MARK = "g700wi-rc:";
+const CREDENTIAL_STORE = "g700-web-installer";
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export class ConnectError extends Error {
   constructor(kind, cause) {
@@ -24,6 +27,8 @@ export class AdbSession {
     this.serial = "";
     this.onCommand = onCommand ?? (() => {});
     this.onDisconnect = onDisconnect ?? (() => {});
+    /** True while tcpip() waits for the car's ADB to restart: the drop that follows is expected and is not announced. */
+    this.restarting = false;
   }
 
   static get supported() {
@@ -51,25 +56,108 @@ export class AdbSession {
       transport = await AdbDaemonTransport.authenticate({
         serial: device.serial,
         connection,
-        credentialStore: new AdbWebCredentialStore("g700-web-installer"),
+        credentialStore: new AdbWebCredentialStore(CREDENTIAL_STORE),
       });
     } catch (error) {
       throw new ConnectError("auth", error);
     }
-    const adb = new Adb(transport);
-    this.adb = adb;
-    this.serial = device.serial;
-    adb.disconnected.then(
-      () => this.#dropped(adb),
-      () => this.#dropped(adb),
-    );
+    this.#adopt(new Adb(transport), device.serial);
     return { serial: device.serial, usbName: device.name };
   }
 
-  #dropped(adb) {
+  #adopt(adb, serial) {
+    this.adb = adb;
+    this.serial = serial;
+    adb.disconnected.then(
+      () => this.dropped(adb),
+      () => this.dropped(adb),
+    );
+  }
+
+  /** The connection behind [adb] ended. While tcpip() waits for ADB to restart it says nothing: tcpip() reports the outcome. */
+  dropped(adb) {
     if (this.adb !== adb) return;
     this.adb = null;
-    this.onDisconnect();
+    if (!this.restarting) this.onDisconnect();
+  }
+
+  /**
+   * Asks the car's ADB to listen on the admin link's port (the engine's own `tcpip:<port>` service — what `adb tcpip`
+   * sends), then gets the car back: ADB restarts when asked, which drops this USB connection. The car was already
+   * chosen in Chrome's picker, so it is found again without one; if its "Allow USB debugging?" prompt returns, the
+   * owner taps Allow and the wait ends. Finally the port the car reports is read back.
+   *
+   * Only LAUNCHER.adminLinkPort is ever accepted. Nothing here is undone later: the listener belongs to the car's ADB.
+   * @returns {Promise<{output: string, exitCode: number, back: boolean, listening: boolean}>}
+   *   exitCode 0 = the car said it is restarting in TCP mode; back = this session is connected again;
+   *   listening = the car reports the port.
+   */
+  async tcpip(port, { settleMs = 4000, waitMs = 40000, stepMs = 500 } = {}) {
+    if (port !== LAUNCHER.adminLinkPort) throw new Error("only the admin link's port");
+    const adb = this.adb;
+    if (!adb) throw new Error("not connected");
+    const serial = this.serial;
+    this.restarting = true;
+    try {
+      let output;
+      let accepted = true;
+      try {
+        output = String(await adb.tcpip.setPort(port)).trim();
+      } catch (error) {
+        accepted = false;
+        output = String(error?.message ?? error).trim();
+      }
+      this.onCommand(`tcpip:${port}`, { output, exitCode: accepted ? 0 : 1 });
+      if (!accepted) return { output, exitCode: 1, back: this.adb === adb, listening: false };
+      // ADB restarts a moment after it answers. A car that keeps the connection simply carries on with it.
+      const dropped = await Promise.race([adb.disconnected.then(() => true, () => true), sleep(settleMs).then(() => false)]);
+      let back = !dropped && this.adb === adb;
+      if (dropped) {
+        this.adb = null;
+        try { await adb.close(); } catch { /* already gone */ }
+        back = await this.#reopen(serial, waitMs, stepMs);
+      }
+      let listening = false;
+      if (back) {
+        try {
+          listening = (await this.shell(cmd.getprop("service.adb.tcp.port"))).output.trim() === String(port);
+        } catch { /* the port simply stays unconfirmed */ }
+      }
+      return { output, exitCode: 0, back, listening };
+    } finally {
+      this.restarting = false;
+      if (this.adb === null) this.onDisconnect();
+    }
+  }
+
+  /** Finds the same car again among the devices Chrome already has permission for, and completes the handshake. */
+  async #reopen(serial, waitMs, stepMs) {
+    const manager = AdbDaemonWebUsbDeviceManager.BROWSER;
+    const until = Date.now() + waitMs;
+    while (manager && Date.now() < until) {
+      await sleep(stepMs);
+      let device;
+      try {
+        device = (await manager.getDevices()).find((candidate) => candidate.serial === serial);
+      } catch {
+        device = undefined;
+      }
+      if (!device) continue;
+      try {
+        const connection = await device.connect();
+        const handshake = AdbDaemonTransport.authenticate({ serial: device.serial, connection, credentialStore: new AdbWebCredentialStore(CREDENTIAL_STORE) });
+        // The car may ask "Allow USB debugging?" again; the wait for that tap is bounded like the rest.
+        const transport = await Promise.race([handshake, sleep(Math.max(0, until - Date.now())).then(() => null)]);
+        if (!transport) {
+          // Too late: if the handshake still completes, it is closed rather than adopted behind the owner's back.
+          handshake.then((late) => late.close?.(), () => {});
+          return false;
+        }
+        this.#adopt(new Adb(transport), device.serial);
+        return true;
+      } catch { /* ADB is still restarting, or the interface is busy: look again */ }
+    }
+    return false;
   }
 
   async disconnect() {

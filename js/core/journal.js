@@ -45,6 +45,17 @@ export class JournalStore {
     all[deviceKey] = [...(Array.isArray(all[deviceKey]) ? all[deviceKey] : []), entry].slice(-MAX_ENTRIES_PER_DEVICE);
     return this.#write(all);
   }
+  /**
+   * Replaces the device's last entry with [entry]: a step that runs after the entry was stored (the admin link's
+   * listener, the last thing done on the car) completes that same entry instead of adding a second one.
+   * @returns {boolean} true when it reached persistent storage
+   */
+  amendLast(deviceKey, entry) {
+    const all = { ...this.#read() };
+    const list = Array.isArray(all[deviceKey]) ? all[deviceKey] : [];
+    all[deviceKey] = [...list.slice(0, -1), entry].slice(-MAX_ENTRIES_PER_DEVICE);
+    return this.#write(all);
+  }
 }
 
 /**

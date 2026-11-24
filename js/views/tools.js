@@ -1,7 +1,7 @@
 // Tools: update check, repair, uninstall (with the journal report) and the diagnostics report.
 import { t } from "../i18n.js";
 import { h, icon, ltr, note, StepList, confirmDialog, copyText } from "../ui.js";
-import { repairLauncher, uninstallLauncher, collectDiagnostics, REPAIR_STEPS, UNINSTALL_STEPS } from "../core/pipeline.js";
+import { repairLauncher, uninstallLauncher, collectDiagnostics, repairSteps as repairStepIds, UNINSTALL_STEPS } from "../core/pipeline.js";
 import { updateStatus } from "../core/version.js";
 import { summarizeJournal } from "../core/journal.js";
 import { buildDiagnosticsReport } from "../core/redact.js";
@@ -9,6 +9,8 @@ import { viewHead, panel, describeLauncherStep, requireConnection, abortMessage,
 
 let app;
 let updateBox, repairSteps, uninstallSteps, repairOutcome, uninstallOutcome, keepData, includeSerial, reportBox, copyButton;
+// "Also switch on the admin link": the owner's choice, unticked until he ticks it (the car's debugging then listens on the car's networks).
+let adminLink;
 const buttons = {};
 const outcome = { repair: null, uninstall: null }; // {kind, text: () => string, summary?}
 let diagnostics = null; // collected data (kept so the serial option and the language can change without re-reading the car)
@@ -23,6 +25,7 @@ export function init(root, appRef) {
   repairOutcome = h("div", {});
   uninstallOutcome = h("div", { class: "stack" });
   keepData = h("input", { type: "checkbox" });
+  adminLink = h("input", { type: "checkbox" });
   includeSerial = h("input", { type: "checkbox", on: { change: renderReport } });
   reportBox = h("pre", { class: "report" });
   buttons.check = h("button", { type: "button", class: "btn", on: { click: () => app.exclusive(async () => { await app.loadRelease(); await app.refreshDevice(); }) } }, icon("refresh"), h("span", { i18n: "tools.update.check" }));
@@ -35,7 +38,9 @@ export function init(root, appRef) {
     viewHead("tools.title", "tools.lead"),
     h("div", { class: "tool-grid" },
       panel("tools.update.title", "refresh", h("p", { class: "panel-lead", i18n: "tools.update.lead" }), updateBox, h("div", { class: "row" }, buttons.check)),
-      panel("tools.repair.title", "wrench", h("p", { class: "panel-lead", i18n: "tools.repair.lead" }), h("div", { class: "row" }, buttons.repair), repairOutcome, repairBox),
+      panel("tools.repair.title", "wrench", h("p", { class: "panel-lead", i18n: "tools.repair.lead" }),
+        h("label", { class: "check" }, adminLink, h("span", { i18n: "install.adminLink.option" })),
+        h("div", { class: "row" }, buttons.repair), repairOutcome, repairBox),
       panel("tools.uninstall.title", "trash", h("p", { class: "panel-lead", i18n: "tools.uninstall.lead" }),
         h("label", { class: "check" }, keepData, h("span", { i18n: "tools.uninstall.keep" })),
         h("div", { class: "row" }, buttons.uninstall), uninstallOutcome, uninstallBox),
@@ -96,6 +101,7 @@ export function render() {
   buttons.uninstall.disabled = !idle || !launcher.installed;
   buttons.collect.disabled = !idle;
   keepData.disabled = !idle;
+  adminLink.disabled = app.busy;
   repairOutcome.replaceChildren(...(outcome.repair ? [note(outcome.repair.kind, h("span", { text: outcome.repair.text() }))] : []));
   uninstallOutcome.replaceChildren(...[
     outcome.uninstall ? note(outcome.uninstall.kind, h("span", { text: outcome.uninstall.text() })) : null,
@@ -108,15 +114,23 @@ export function render() {
 
 async function repair() {
   if (!requireConnection(app)) return;
-  const ok = await confirmDialog({ titleKey: "tools.repair.confirm.title", okKey: "tools.repair.button", content: [h("p", { text: t("tools.repair.confirm.body") }), h("p", { class: "faint", text: t("install.plan.not") })] });
+  // Read once: what the owner confirmed in the plan is what runs, whatever the box says later.
+  const withLink = adminLink.checked;
+  const ok = await confirmDialog({ titleKey: "tools.repair.confirm.title", okKey: "tools.repair.button", content: [
+    h("p", { text: t("tools.repair.confirm.body") }),
+    withLink ? h("p", { text: t("install.plan.adminLink") }) : null,
+    h("p", { class: "faint", text: withLink ? t("install.plan.notWithLink") : t("install.plan.not") }),
+  ] });
   if (!ok) return;
   await app.exclusive(async () => {
     outcome.repair = null;
-    repairSteps.reset(REPAIR_STEPS);
+    repairSteps.reset(repairStepIds(withLink));
     try {
-      const { journal } = await repairLauncher({ dev: app.dev, report: (step) => repairSteps.update(step), journalStore: app.journalStore, deviceKey: app.deviceKey });
+      const { journal } = await repairLauncher({ dev: app.dev, report: (step) => repairSteps.update(step), journalStore: app.journalStore, deviceKey: app.deviceKey, adminLink: adminLink.checked && withLink });
       const skipped = journal.grants.filter((grant) => !grant.ok).length;
-      outcome.repair = { kind: "ok", text: () => (skipped ? `${t("tools.repair.done")} ${t("install.doneSkips", { n: skipped })}` : t("tools.repair.done")) };
+      // Without the listener the admin link cannot connect on the car: said plainly, with how to switch it on.
+      const done = () => (withLink ? t("tools.repair.done") : `${t("tools.repair.done")} ${t("install.adminLink.notStarted")}`);
+      outcome.repair = { kind: "ok", text: () => (skipped ? `${done()} ${t("install.doneSkips", { n: skipped })}` : done()) };
     } catch (error) {
       outcome.repair = { kind: "bad", text: () => abortMessage(error) };
     } finally {

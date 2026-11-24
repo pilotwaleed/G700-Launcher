@@ -14,24 +14,29 @@ export const LAUNCHER = Object.freeze({
   deviceJournal: "/sdcard/Android/data/com.g700studio/files/install-journal.json",
   killSwitch: "/sdcard/Android/data/com.g700studio/files/noboot",
   tempApk: "/data/local/tmp/g700wi-launcher.apk",
+  /** The admin link's port on the car itself (ADR-005). The only port this site ever asks ADB to listen on; ADMIN_LINK_PORT in g700ctl.py. */
+  adminLinkPort: 5555,
 });
 
-/** (kind, name, why) — identical to tools/g700ctl.py GRANTS. */
+/** (kind, name, why) — identical to tools/g700ctl.py GRANTS. A row the car refuses or does not define (the car permissions on some firmware) is a skip. */
 export const LAUNCHER_GRANTS = Object.freeze([
   ["appops", "SYSTEM_ALERT_WINDOW", "quick-access handle (the stock launcher hides sideloaded apps)"],
   ["appops", "REQUEST_INSTALL_PACKAGES", "install apps from verified publishers and self-update"],
   ["appops", "GET_USAGE_STATS", "know which app is in front"],
   ["appops", "PROJECT_MEDIA", "mirror the centre screen to an identified screen"],
-  ["appops", "WRITE_SETTINGS", "brightness slider in the Control Centre"],
+  ["appops", "WRITE_SETTINGS", "the launcher's own brightness bar in Car system (the panel may ignore it)"],
   ["appops", "MANAGE_EXTERNAL_STORAGE", "the Store installs an app file from the car's storage or a USB stick"],
   ["pm", "android.permission.WRITE_SECURE_SETTINGS", "helper link re-enables its own services after boot"],
   ["pm", "android.permission.ACCESS_FINE_LOCATION", "weather and prayer times for where the car is (optional)"],
   ["pm", "android.permission.ACCESS_COARSE_LOCATION", "weather and prayer times for where the car is (optional)"],
   ["pm", "android.permission.POST_NOTIFICATIONS", "service notifications with Stop actions"],
+  ["pm", "android.permission.RECORD_AUDIO", "the assistant's microphone"],
+  ["pm", "android.permission.READ_MEDIA_IMAGES", "photos sent from the phone as wallpapers"],
   ["pm", "android.car.permission.CAR_ENERGY", "battery, fuel, range widget"],
   ["pm", "android.car.permission.CAR_POWERTRAIN", "gear/parking brake as a parked cross-check"],
   ["pm", "android.car.permission.CAR_EXTERIOR_ENVIRONMENT", "outside temperature"],
   ["pm", "android.car.permission.CAR_INFO", "vehicle info"],
+  ["pm", "android.car.permission.CAR_TIRES", "tyre pressures"],
   ["notification", LAUNCHER.mediaListener, "Now Playing widget (media sessions)"],
 ].map((row) => Object.freeze(row)));
 
