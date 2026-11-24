@@ -88,7 +88,7 @@ a { color: var(--accent); }
 .shell { position: relative; z-index: 1; display: grid; grid-template-columns: 292px minmax(0, 1fr); gap: 22px; min-height: 100vh; padding: 22px; max-inline-size: 1560px; margin-inline: auto; }
 .rail { position: sticky; inset-block-start: 22px; align-self: start; display: flex; flex-direction: column; gap: 18px; padding: 22px 16px 16px; min-block-size: calc(100vh - 44px); }
 .brand { display: flex; align-items: center; gap: 12px; padding-inline: 6px; }
-.brand-mark { inline-size: 46px; block-size: 46px; flex: none; filter: drop-shadow(0 0 14px rgba(140, 203, 255, .35)); }
+.brand-mark { inline-size: 46px; block-size: 46px; flex: none; border-radius: 12px; box-shadow: 0 0 0 1px rgba(212, 175, 95, .35), 0 6px 18px rgba(0, 0, 0, .35); }
 .brand-name { font-weight: 600; font-size: 16.5px; line-height: 1.25; letter-spacing: .01em; }
 .brand-sub { color: var(--text-2); font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; margin-block-start: 3px; }
 [dir="rtl"] .brand-sub { letter-spacing: 0; font-size: 13px; }
