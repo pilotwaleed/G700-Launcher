@@ -30,7 +30,6 @@ export const LAUNCHER_GRANTS = Object.freeze([
   ["pm", "android.permission.ACCESS_FINE_LOCATION", "weather and prayer times for where the car is (optional)"],
   ["pm", "android.permission.ACCESS_COARSE_LOCATION", "weather and prayer times for where the car is (optional)"],
   ["pm", "android.permission.POST_NOTIFICATIONS", "service notifications with Stop actions"],
-  ["pm", "android.permission.RECORD_AUDIO", "the assistant's microphone"],
   ["pm", "android.permission.READ_MEDIA_IMAGES", "photos sent from the phone as wallpapers"],
   ["pm", "android.car.permission.CAR_ENERGY", "battery, fuel, range widget"],
   ["pm", "android.car.permission.CAR_POWERTRAIN", "gear/parking brake as a parked cross-check"],
