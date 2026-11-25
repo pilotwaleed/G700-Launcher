@@ -453,35 +453,28 @@
    }
   },
   {
-   "id": "leonardo-valley",
-   "nameEn": "Leonardo's valley",
-   "nameAr": "وادي ليوناردو",
+   "id": "renaissance-valley",
+   "nameEn": "Renaissance valley",
+   "nameAr": "وادي النهضة",
    "group": "cinema",
    "tone": "dark",
    "live": "none",
-   "thumb": "pack-leonardo-valley.thumb.jpg",
+   "thumb": "pack-renaissance-valley.thumb.jpg",
    "centre": {
-    "file": "pack-leonardo-valley-centre.jpg",
-    "sha256": "f1ec38739f118b17e409a16cff96a86c224aae7cd4ad0cd381624ad661cf8beb",
+    "file": "pack-renaissance-valley-centre.jpg",
+    "sha256": "3d2cbd0bb0087ce79cdfc481074d566a8ff4a85851436a4df55d7584e5e44582",
     "width": 2560,
     "height": 1440
    },
-   "strip": {
-    "file": "pack-leonardo-valley-strip.jpg",
-    "sha256": "0d1dbb9bd895f66841692cdc19fe1083e1a42661453e6d4cd6e57d2209480fa6",
-    "width": 4032,
-    "height": 284,
-    "native": true
-   },
    "roof": {
-    "file": "pack-leonardo-valley-roof.jpg",
-    "sha256": "df424f3b2c99fea7d94ecd7f33b0c66653cc9b6ee120c8563ffe8190b8348aa0",
+    "file": "pack-renaissance-valley-roof.jpg",
+    "sha256": "fd26259c3b812745a433cabe9fe78ac6b1e713b52025f8b9a4f7ec9f3e3cf8ba",
     "width": 2880,
     "height": 1620
    },
    "climate": {
-    "file": "pack-leonardo-valley-climate.jpg",
-    "sha256": "3caf6b564a68e2c6fcfcaf673675ffec196d5abaec807b676d2bf4bfb7519045",
+    "file": "pack-renaissance-valley-climate.jpg",
+    "sha256": "107e412b6850926303df097a41e6e0590c7dba6559acb33f38794926cde9ee70",
     "width": 1920,
     "height": 480
    }
