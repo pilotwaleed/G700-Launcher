@@ -555,6 +555,40 @@
    }
   },
   {
+   "id": "aurora-fjord",
+   "nameEn": "Aurora over the frozen fjord",
+   "nameAr": "الشفق فوق المضيق المتجمد",
+   "group": "sky",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-aurora-fjord.thumb.jpg",
+   "centre": {
+    "file": "pack-aurora-fjord-centre.jpg",
+    "sha256": "014eadf75fcd636434e935727eafb5013d62e58424fadd2663eb0e5d01c59fd1",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-aurora-fjord-strip.jpg",
+    "sha256": "612218698e02589812792136f999bd8c532b567249315d2162ea22f5319e3862",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
+   "roof": {
+    "file": "pack-aurora-fjord-roof.jpg",
+    "sha256": "ba85013cf63cb51843aba4fcd93aef356d36553b883f831cee18aa0bc7aa128b",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-aurora-fjord-climate.jpg",
+    "sha256": "e503129cd12967dca846dca67a7b8d25aa6cb864564d146aadb48727f6cc3648",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
    "id": "dhow-sunset",
    "nameEn": "Sunset dhow",
    "nameAr": "محمل الغروب",
