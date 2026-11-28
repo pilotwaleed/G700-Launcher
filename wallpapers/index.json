@@ -283,6 +283,210 @@
    }
   },
   {
+   "id": "moon-crossing",
+   "nameEn": "Crossing the moon",
+   "nameAr": "عبور القمر",
+   "group": "aviation",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-moon-crossing.thumb.jpg",
+   "centre": {
+    "file": "pack-moon-crossing-centre.jpg",
+    "sha256": "38a09ae2e7fba9dc7b47c5df87f2d26bd9fede58d06c28c9bec8ad8762d05583",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-moon-crossing-strip.jpg",
+    "sha256": "64bc37f83d0fe8b522e652b1ca149c79fcb48fca236dfcd0da2fbbcdb6bb4f81",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
+   "roof": {
+    "file": "pack-moon-crossing-roof.jpg",
+    "sha256": "366e497d002238b2cfa626171240f23acd85ad2754af5700545292c5bbb75deb",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-moon-crossing-climate.jpg",
+    "sha256": "9b498257f71c2f9f988b088fcff076bb10085465323ec2dde0800f261f59d075",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "oasis-dawn",
+   "nameEn": "Oasis tower at dawn",
+   "nameAr": "برج الواحة عند الفجر",
+   "group": "nature",
+   "tone": "light",
+   "live": "none",
+   "thumb": "pack-oasis-dawn.thumb.jpg",
+   "centre": {
+    "file": "pack-oasis-dawn-centre.jpg",
+    "sha256": "04b86ac11de07051f528e1925d828d092c31dd65bf96fca2840d7d1486d1e3ca",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-oasis-dawn-strip.jpg",
+    "sha256": "d1d26716828647e933dbb34d3b33a950ee948df5c71cbd9d88fd9e69093c0edb",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
+   "roof": {
+    "file": "pack-oasis-dawn-roof.jpg",
+    "sha256": "9fc806ae02f265c9189bba43feda1b7fd54d8c82cf6bc4f14b409e8af42866a5",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-oasis-dawn-climate.jpg",
+    "sha256": "6a368710c3f57a4768df58cbd162ad08698fd431ac96194feb12a6d867145f82",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "salt-mirror",
+   "nameEn": "Salt mirror at sunset",
+   "nameAr": "مرآة الملح وقت الغروب",
+   "group": "nature",
+   "tone": "light",
+   "live": "none",
+   "thumb": "pack-salt-mirror.thumb.jpg",
+   "centre": {
+    "file": "pack-salt-mirror-centre.jpg",
+    "sha256": "91051121d97e231c73f7815794b5ceb28cdfdc2537f3497c04d4c5313156863b",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-salt-mirror-strip.jpg",
+    "sha256": "38e385cc24f28319fade8cc78c95c222f86a9addd5df955dfd1a573a6b7754ba",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
+   "roof": {
+    "file": "pack-salt-mirror-roof.jpg",
+    "sha256": "052d8cf282afc857e0fe4f393a1c985a83b964ac5e05087c9321121266ea42ea",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-salt-mirror-climate.jpg",
+    "sha256": "14a4490e2f5917117de43b394d308cb88bdafccbf609aedb3882811bcc836f83",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "eclipse-sea",
+   "nameEn": "Eclipse over the sea",
+   "nameAr": "كسوف فوق البحر",
+   "group": "sky",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-eclipse-sea.thumb.jpg",
+   "centre": {
+    "file": "pack-eclipse-sea-centre.jpg",
+    "sha256": "e944dd7b43d8365df52d0c927a7fbcc7024bb3f517f48339c41e4a64f6575bb1",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-eclipse-sea-strip.jpg",
+    "sha256": "691a79579c037f83514a9dd777e5bce819df32c4640720460240b25e4ebb4f32",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
+   "roof": {
+    "file": "pack-eclipse-sea-roof.jpg",
+    "sha256": "6f84bf772b78bad8dc78bf0ef430550da8b815f187e89e2a921e904630b7f34d",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-eclipse-sea-climate.jpg",
+    "sha256": "f37f9aeacb30f507b34bf18d9063392f67aff8ead4d8cc21e961a8365effcd4b",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "emerald-gold",
+   "nameEn": "Gold on emerald silk",
+   "nameAr": "ذهب على حرير زمردي",
+   "group": "materials",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-emerald-gold.thumb.jpg",
+   "centre": {
+    "file": "pack-emerald-gold-centre.jpg",
+    "sha256": "bdad3cf343c559f4c87d77814bbab97bb90a2189cd9e2a8315211eabf07aafae",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-emerald-gold-strip.jpg",
+    "sha256": "ec5ed4fbe8a8225846578600be17fa25444b96e9d5e11d49134e09af4b74e4a4",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
+   "roof": {
+    "file": "pack-emerald-gold-roof.jpg",
+    "sha256": "2e8cb735a2579edc4ad2dea6fcb944529a918a354e449af98456ba94e85fe285",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-emerald-gold-climate.jpg",
+    "sha256": "aa4b057793fcc90f29d7f14aee8f9142648780725cf1bc4024281b99f4eb8207",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
+   "id": "village-blue-hour",
+   "nameEn": "Seaside village at blue hour",
+   "nameAr": "قرية على البحر وقت المغرب",
+   "group": "city",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-village-blue-hour.thumb.jpg",
+   "centre": {
+    "file": "pack-village-blue-hour-centre.jpg",
+    "sha256": "108f2597740ed7d33726c1ffd1bea57613924b74940cac5de516a86bc216452e",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-village-blue-hour-strip.jpg",
+    "sha256": "38aa7ec98103915d41f22d88f04a1f7aa56b5c1f797294e7968dd4742e85f227",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
+   "roof": {
+    "file": "pack-village-blue-hour-roof.jpg",
+    "sha256": "a842be4463782227d94201d302dc4d2b8a6357a706125669f0c1306fd7c318bd",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-village-blue-hour-climate.jpg",
+    "sha256": "443a35b7bb83d7f58f3b6fbf9a596df65b333b0cc595b7dd37789ff36d53c426",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
    "id": "dhow-sunset",
    "nameEn": "Sunset dhow",
    "nameAr": "محمل الغروب",
