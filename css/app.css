@@ -312,6 +312,9 @@ progress::-moz-progress-bar { background: var(--accent); border-radius: 999px; }
 .toast-ok { border-color: rgba(111, 211, 166, .5); }
 .noscript { position: relative; z-index: 2; padding: 30px; text-align: center; }
 
+.rail-link { display: block; margin-block-end: 10px; font-size: 14px; text-decoration: none; }
+.rail-link:hover { text-decoration: underline; }
+
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes pulse { 50% { opacity: .35; } }
 @keyframes rise { from { opacity: 0; transform: translateY(8px); } }

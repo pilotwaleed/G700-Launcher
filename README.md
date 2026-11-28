@@ -35,23 +35,36 @@ the publishing step copy it in.
 
 ## Publish a new launcher APK
 
-1. Copy the signed release to `web-installer/apks/`, e.g. `WaleedAlAnsariLauncher-0.3.0.apk`
-   (letters, digits, `.`, `_`, `-` only; must end in `.apk`).
-2. Get its size and digest:
-   ```bash
-   stat -f %z web-installer/apks/WaleedAlAnsariLauncher-0.3.0.apk      # macOS (Linux: stat -c %s)
-   shasum -a 256 web-installer/apks/WaleedAlAnsariLauncher-0.3.0.apk
-   ```
-3. Update `web-installer/apks/latest.json`:
-   ```json
-   {"version":"0.3.0","versionCode":3,"file":"WaleedAlAnsariLauncher-0.3.0.apk","size":5003083,"sha256":"<64 hex>","date":"2026-11-10"}
-   ```
-4. Remove older APK files from `apks/`.
+Since ADR-091 the APK is **not** on this site: it is a GitHub Release asset on `pilotwaleed/G700-Launcher`
+(tag `v<version>`), and the site carries only small files. `tools/release.sh` writes `apks/latest.json`:
 
-While `"file"` is `null` the Install tab says "No APK published yet — choose a local APK". With a file present
-the site downloads it same-origin, computes SHA-256 with WebCrypto and **refuses to install on a mismatch**
-before anything is sent to the car. If `latest.json` is incomplete (bad digest, size, name) the published
-option is disabled and the reason is shown.
+```json
+{"version":"0.7.21","versionCode":61,"file":"WaleedAlAnsariLauncher-0.7.21.apk","size":54799551,"sha256":"<64 hex>",
+ "url":"https://github.com/pilotwaleed/G700-Launcher/releases/download/v0.7.21/WaleedAlAnsariLauncher-0.7.21.apk",
+ "previous":{"version":"0.7.20","versionCode":60,"url":"https://github.com/…/v0.7.20/WaleedAlAnsariLauncher-0.7.20.apk","sha256":"<64 hex>"},
+ "date":"2026-11-28"}
+```
+
+`tools/publish-installer.sh` uploads the asset with `gh`, checks it answers, then mirrors this folder without any APK.
+`url` must be a github.com release-download address ending in `/<file>`; `previous` (the release before, kept for
+rollback) is optional and ignored when unreadable.
+
+GitHub's file host sends no CORS header, so a page cannot download the asset itself. The Install tab first tries a copy
+beside the page (`apks/<file>`, e.g. when serving locally with the APK copied in); otherwise the Published release card
+links to the asset: download it, choose it under "Use a local APK", and it is checked against `sha256` ("Matches the
+published release") before anything is sent to the car. While `"file"` is `null` the Install tab says "No APK published
+yet — choose a local APK"; if `latest.json` is incomplete (bad digest, size, name, url) the published option is
+disabled and the reason is shown.
+
+## Reinstall from your phone (ADR-102)
+
+`reinstall.html` is a phone-width page, linked from the rail ("Reinstall from your phone ›"), for a car a dealer update
+has wiped: it says what the device showing it can do (`js/core/reinstall-route.js`: Android Chrome with WebUSB,
+Android without it, iPhone, computer) and lists each route with how sure it is — an Android phone with a USB-C OTG
+adapter and the usual A-to-A cable using this installer (likely), the car's Wi-Fi with an ADB app (to test; a web page
+cannot open TCP), the car alone (to test, unlikely: no autorun, the unknown-apps page is a stub), iPhone (cannot
+install, can keep the backup). It quotes the launcher's own words; `test/reinstall.test.js` checks them against the
+Kotlin sources, the strings in both languages, the page's policy and that it stays on the site.
 
 ## What each tab does
 
@@ -135,4 +148,5 @@ Nothing below has been run against the owner's G700. Treat each as an assumption
   `mkdir -p` for the upload folder before a push.
 - The package names in `catalog.json` (`packages`) are best-effort hints used only for display names and the
   "Installed" badge; the notes about Google services and DRM are general knowledge, not measurements on this car.
-- Browsers other than desktop Chrome / Edge. Firefox and Safari have no WebUSB.
+- Browsers other than desktop Chrome / Edge. Chrome on an Android phone (with a USB-C OTG adapter) has WebUSB and the
+  pages fit a phone, but no phone has connected to the G700 yet (ADR-102 route 1). Firefox and Safari have no WebUSB.

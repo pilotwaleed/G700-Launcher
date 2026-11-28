@@ -487,6 +487,40 @@
    }
   },
   {
+   "id": "falcon-dunes",
+   "nameEn": "Falcon over the dunes",
+   "nameAr": "الصقر فوق الكثبان",
+   "group": "nature",
+   "tone": "light",
+   "live": "none",
+   "thumb": "pack-falcon-dunes.thumb.jpg",
+   "centre": {
+    "file": "pack-falcon-dunes-centre.jpg",
+    "sha256": "793aa1af68878b3f8d7d6ba8a9d410623e1891a5f6ed03831f5a5825c05c2cd4",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-falcon-dunes-strip.jpg",
+    "sha256": "1a9bb377166976408cacc70dfd33792fa81e173278d29fe8a24c870ba02979eb",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
+   "roof": {
+    "file": "pack-falcon-dunes-roof.jpg",
+    "sha256": "2ed372a043b7f4e0aea268f1acb649c5cef98889935e6ae5396b6b5a069da3df",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-falcon-dunes-climate.jpg",
+    "sha256": "9213942275fb168936a4817cf2f8647f499f16e75e1555ef55b77947ab9db5b8",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
    "id": "dhow-sunset",
    "nameEn": "Sunset dhow",
    "nameAr": "محمل الغروب",
@@ -697,6 +731,13 @@
     "width": 2560,
     "height": 1440
    },
+   "strip": {
+    "file": "pack-flight-deck-strip.jpg",
+    "sha256": "c7bcf1458bed8bb845695d551b88671d456585df019f2605bec43dbb65e7c189",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
    "roof": {
     "file": "pack-flight-deck-roof.jpg",
     "sha256": "049fd61cb7333e9f38751e588e76a0c1c7ac3547c4a10d082e5adf2ef97e8466",
@@ -723,6 +764,13 @@
     "sha256": "376efeb44a45d70164676cd13f4fd31cf9abdb9285473800e6964b21fda5a714",
     "width": 2560,
     "height": 1440
+   },
+   "strip": {
+    "file": "pack-wing-sunrise-strip.jpg",
+    "sha256": "904fe4cfbb151a62ebb959553455d93c1d84cd503fed07600b54619854f8982a",
+    "width": 4032,
+    "height": 284,
+    "native": true
    },
    "roof": {
     "file": "pack-wing-sunrise-roof.jpg",
@@ -751,6 +799,13 @@
     "width": 2560,
     "height": 1440
    },
+   "strip": {
+    "file": "pack-final-approach-strip.jpg",
+    "sha256": "d2df369272d640abb65928d934162ddd890b6c5e276137cedf8edd58df45c9b8",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
    "roof": {
     "file": "pack-final-approach-roof.jpg",
     "sha256": "f17eecbbc9167d685efb746502667645e5684cc9890f7fd280d587008cf56614",
@@ -777,6 +832,13 @@
     "sha256": "f54a12f503523b9b60997d87c18c0c818726eee56a82f4fe398f948113acf816",
     "width": 2560,
     "height": 1440
+   },
+   "strip": {
+    "file": "pack-jet-apron-strip.jpg",
+    "sha256": "98b2f675024c806abc33614ea49f0ad228bbb321873c03d0c0468872fdd0c938",
+    "width": 4032,
+    "height": 284,
+    "native": true
    },
    "roof": {
     "file": "pack-jet-apron-roof.jpg",
@@ -805,6 +867,13 @@
     "width": 2560,
     "height": 1440
    },
+   "strip": {
+    "file": "pack-golden-contrails-strip.jpg",
+    "sha256": "c91ace1635be4606904a01c38e0ced147335ff8f16828b494c51adfe7940ad72",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
    "roof": {
     "file": "pack-golden-contrails-roof.jpg",
     "sha256": "c25e1eb3ea326a581cf3c6f006dc70c94db00d044bbe2b4d7221440bbdd541c9",
@@ -831,6 +900,13 @@
     "sha256": "d6797604d6e1895f891b277cb1fba7379d40ee3d078967b331b7b53430471269",
     "width": 2560,
     "height": 1440
+   },
+   "strip": {
+    "file": "pack-cloud-sea-strip.jpg",
+    "sha256": "3d343cc1001b2fbaaf79f1e2bf64a0fa8b22a79c8b0a4a2510cd3ba190609480",
+    "width": 4032,
+    "height": 284,
+    "native": true
    },
    "roof": {
     "file": "pack-cloud-sea-roof.jpg",

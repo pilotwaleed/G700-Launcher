@@ -1,8 +1,15 @@
 {
-  "version": "0.7.20",
-  "versionCode": 60,
-  "file": "WaleedAlAnsariLauncher-0.7.20.apk",
-  "size": 54799551,
-  "sha256": "b62788c6a5168dfb03ed7fc5158ab28202cfe0eddbbfe3be4c50e1140b70cca0",
+  "version": "0.7.21",
+  "versionCode": 61,
+  "file": "WaleedAlAnsariLauncher-0.7.21.apk",
+  "size": 56387459,
+  "sha256": "6136060bb6b34e5f969d636d8d16e687ec92297b4659499a6e3aaec3e8c477f6",
+  "url": "https://github.com/pilotwaleed/G700-Launcher/releases/download/v0.7.21/WaleedAlAnsariLauncher-0.7.21.apk",
+  "previous": {
+    "version": "0.7.20",
+    "versionCode": 60,
+    "url": "https://github.com/pilotwaleed/G700-Launcher/releases/download/v0.7.20/WaleedAlAnsariLauncher-0.7.20.apk",
+    "sha256": "b62788c6a5168dfb03ed7fc5158ab28202cfe0eddbbfe3be4c50e1140b70cca0"
+  },
   "date": "2026-11-28"
 }

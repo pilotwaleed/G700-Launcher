@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Reinstall from your phone — MONALIZA Launcher</title>
+  <link rel="icon" type="image/png" href="img/logo-64.png">
+  <link rel="stylesheet" href="css/reinstall.css">
+</head>
+<body>
+  <main class="page">
+    <header class="top">
+      <img class="mark" src="img/logo-192.png" width="44" height="44" alt="">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="en" lang="en">English</button>
+        <button type="button" class="lang-btn" data-lang="ar" lang="ar">العربية</button>
+      </div>
+    </header>
+
+    <h1 data-i18n="re.title">Reinstall from your phone</h1>
+    <p class="lead" data-i18n="re.lead">After a dealer update the launcher may be gone. This page says how to put it back without a computer, and what this phone can do.</p>
+    <p class="you" id="re-you" role="status"></p>
+
+    <section class="card">
+      <h2 data-i18n="re.first.t">First, look</h2>
+      <p data-i18n="re.first.d">If the launcher is still on the car after the update, there is nothing to do.</p>
+    </section>
+
+    <section class="card card-main" id="route-phone">
+      <div class="card-head">
+        <h2 data-i18n="re.r1.t">1 · Android phone + cable + Chrome</h2>
+        <span class="badge badge-likely" data-i18n="re.badge.likely">Likely — to confirm on the car</span>
+      </div>
+      <h3 data-i18n="re.need">You need</h3>
+      <ul class="need">
+        <li data-i18n="re.r1.need1">ADB switched on in the car's engineering menu.</li>
+        <li data-i18n="re.r1.need2">A USB-C OTG adapter for the phone.</li>
+        <li data-i18n="re.r1.need3">The USB-A to USB-A data cable.</li>
+        <li data-i18n="re.r1.need4">Chrome on the phone, and the launcher's file.</li>
+      </ul>
+      <h3 data-i18n="re.steps">Steps</h3>
+      <ol class="steps">
+        <li data-i18n="re.r1.s1">Car in P. Switch on ADB.</li>
+        <li data-i18n="re.r1.s2">Adapter, cable, car.</li>
+        <li data-i18n="re.r1.s3">Open the installer, Connect, Allow.</li>
+        <li data-i18n="re.r1.s4">Install the file.</li>
+        <li data-i18n="re.r1.s5">Plug the stick into the car and bring your setup back.</li>
+      </ol>
+      <a class="go" href="index.html" data-i18n="re.toInstaller">Open the installer</a>
+      <p class="why" data-i18n="re.r1.why">Not yet tried from a phone on the G700.</p>
+    </section>
+
+    <section class="card" id="route-wifi">
+      <div class="card-head">
+        <h2 data-i18n="re.r2.t">2 · Over the car's Wi-Fi with an ADB app</h2>
+        <span class="badge badge-test" data-i18n="re.badge.test">To test on the car</span>
+      </div>
+      <p data-i18n="re.r2.d">Only if the car's debugging still listens on the network after the update.</p>
+    </section>
+
+    <section class="card" id="route-car">
+      <div class="card-head">
+        <h2 data-i18n="re.r3.t">3 · The car alone</h2>
+        <span class="badge badge-test" data-i18n="re.badge.test">To test on the car</span>
+      </div>
+      <p data-i18n="re.r3.d">Android has no autorun.</p>
+    </section>
+
+    <section class="card" id="route-iphone">
+      <div class="card-head">
+        <h2 data-i18n="re.ios.t">iPhone</h2>
+        <span class="badge badge-known" data-i18n="re.badge.known">Known</span>
+      </div>
+      <p data-i18n="re.ios.d">An iPhone cannot install the launcher; it can keep your backup.</p>
+    </section>
+
+    <section class="card" id="route-computer">
+      <div class="card-head">
+        <h2 data-i18n="re.pc.t">A computer</h2>
+        <span class="badge badge-known" data-i18n="re.badge.known">Known</span>
+      </div>
+      <p data-i18n="re.pc.d">The full installer, as before.</p>
+    </section>
+
+    <p class="never" data-i18n="re.never">Never: no root, no flashing, no engineering codes on this site.</p>
+  </main>
+  <noscript><p class="noscript">This page needs JavaScript for its two languages; the steps above are in English.</p></noscript>
+  <script type="module" src="js/reinstall.js"></script>
+</body>
+</html>

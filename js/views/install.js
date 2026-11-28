@@ -101,6 +101,7 @@ function publishedCard() {
         h("dt", { text: t("install.pub.sha") }), h("dd", {}, ltr(release.sha256, "mono")),
       ),
       h("p", { class: "faint", text: t("install.pub.verifyNote") }),
+      release.url ? h("p", {}, h("a", { href: release.url, target: "_blank", rel: "noopener noreferrer", text: t("install.pub.github") }), " ", h("span", { class: "faint", text: t("install.pub.githubNote") })) : null,
     );
   }
   return h("label", { class: "source-option inset" }, h("h3", {}, radio, h("span", { text: t("install.source.published") })), body);
@@ -155,7 +156,11 @@ export function render() {
 }
 
 async function downloadPublished(release, onProgress) {
+  // A copy beside the page (a local serve, or an older site) is used when there is one. Since ADR-091 the published
+  // APK is a GitHub release asset, which a page cannot fetch (GitHub's file host sends no CORS header): the owner
+  // downloads it from the link on the card and chooses it as a local file, where it is checked against this SHA-256.
   const response = await fetch(`apks/${encodeURIComponent(release.file)}`, { cache: "no-store" });
+  if (response.status === 404 && release.url) throw new PipelineAbort("fetch", "download-elsewhere", release.url);
   if (!response.ok || !response.body) throw new PipelineAbort("fetch", "download-failed", `HTTP ${response.status}`);
   const reader = response.body.getReader();
   const chunks = [];

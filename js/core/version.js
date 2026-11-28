@@ -22,9 +22,32 @@ export function validateRelease(raw) {
   if (!Number.isInteger(raw.size) || raw.size <= 0) problems.push("size");
   const sha256 = typeof raw.sha256 === "string" ? raw.sha256.trim().toLowerCase() : "";
   if (!SHA256_RE.test(sha256)) problems.push("sha256");
+  // ADR-091: the APK is a GitHub release asset; the site keeps only this small file. "url" names that asset.
+  const url = raw.url === undefined || raw.url === null ? null : releaseAssetUrl(raw.url, raw.file);
+  if (raw.url !== undefined && raw.url !== null && url === null) problems.push("url");
   if (problems.length) return { state: "invalid", problems };
   const date = typeof raw.date === "string" && /^\d{4}-\d{2}-\d{2}$/.test(raw.date) ? raw.date : null;
-  return { state: "published", version, versionCode, file: raw.file, size: raw.size, sha256, date };
+  return { state: "published", version, versionCode, file: raw.file, size: raw.size, sha256, date, url, previous: previousRelease(raw.previous) };
+}
+
+const RELEASE_ASSET_RE = /^https:\/\/github\.com\/[A-Za-z0-9_.-]{1,100}\/[A-Za-z0-9_.-]{1,100}\/releases\/download\/[A-Za-z0-9._+-]{1,64}\/([A-Za-z0-9][A-Za-z0-9._-]{0,120}\.apk)$/;
+
+/** A GitHub release asset address, optionally for exactly [file]; null for anything else. */
+function releaseAssetUrl(value, file) {
+  if (typeof value !== "string") return null;
+  const m = RELEASE_ASSET_RE.exec(value);
+  if (!m || (file !== undefined && m[1] !== file)) return null;
+  return value;
+}
+
+/** The release before this one, kept reachable for rollback; null when absent or unreadable. */
+function previousRelease(raw) {
+  if (raw === null || typeof raw !== "object" || Array.isArray(raw)) return null;
+  const version = typeof raw.version === "string" && VERSION_RE.test(raw.version) ? raw.version : null;
+  const versionCode = Number.isInteger(raw.versionCode) && raw.versionCode > 0 ? raw.versionCode : null;
+  const url = releaseAssetUrl(raw.url);
+  const sha256 = typeof raw.sha256 === "string" ? raw.sha256.trim().toLowerCase() : "";
+  return version && versionCode && url && SHA256_RE.test(sha256) ? { version, versionCode, url, sha256 } : null;
 }
 
 /** Numeric dotted compare: -1, 0, 1. Non-numeric parts compare as 0; suffixes after - or + are ignored. */
