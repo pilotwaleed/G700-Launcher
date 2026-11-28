@@ -521,6 +521,40 @@
    }
   },
   {
+   "id": "pearl-dhows",
+   "nameEn": "Pearl-diving dhows",
+   "nameAr": "سفن الغوص على اللؤلؤ",
+   "group": "nature",
+   "tone": "light",
+   "live": "none",
+   "thumb": "pack-pearl-dhows.thumb.jpg",
+   "centre": {
+    "file": "pack-pearl-dhows-centre.jpg",
+    "sha256": "56108de2399e11751fc62506aaa3a1d30feb150c2e4fa994cf45eb9e5e32f1c6",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-pearl-dhows-strip.jpg",
+    "sha256": "550bd6c39979d0c52bc2aaedb0e2e3de57bf1523ce75bc396648b8303ee7e941",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
+   "roof": {
+    "file": "pack-pearl-dhows-roof.jpg",
+    "sha256": "fd704c8ae65589e8436d51c601dfba4068cf948973e5c24576a8f0732926ec93",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-pearl-dhows-climate.jpg",
+    "sha256": "5882bc174ab9b0b9b02b7bcb416bcda3338338911c237bc483adb2f0275ffadf",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
    "id": "dhow-sunset",
    "nameEn": "Sunset dhow",
    "nameAr": "محمل الغروب",
