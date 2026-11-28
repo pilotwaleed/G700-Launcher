@@ -589,6 +589,40 @@
    }
   },
   {
+   "id": "rose-gold-glass",
+   "nameEn": "Black glass, rose gold",
+   "nameAr": "زجاج أسود بلمسة ذهب وردي",
+   "group": "materials",
+   "tone": "dark",
+   "live": "none",
+   "thumb": "pack-rose-gold-glass.thumb.jpg",
+   "centre": {
+    "file": "pack-rose-gold-glass-centre.jpg",
+    "sha256": "5c6f410109825527a45b79eb41b2f5a9153471db304fea80a20be36de5e2d837",
+    "width": 2560,
+    "height": 1440
+   },
+   "strip": {
+    "file": "pack-rose-gold-glass-strip.jpg",
+    "sha256": "c72dd84b317a84afadc45a2315a95441dd048fa160213406b03c3bbaa58280df",
+    "width": 4032,
+    "height": 284,
+    "native": true
+   },
+   "roof": {
+    "file": "pack-rose-gold-glass-roof.jpg",
+    "sha256": "4dab9a4fe61e95834e615afb853e386606e26d798ea0edd993345357d4ae51b1",
+    "width": 2880,
+    "height": 1620
+   },
+   "climate": {
+    "file": "pack-rose-gold-glass-climate.jpg",
+    "sha256": "14bb7f2388b95d922ada5685f09453ed2be61bf1eae1a9de719bc69e9e3d21c2",
+    "width": 1920,
+    "height": 480
+   }
+  },
+  {
    "id": "dhow-sunset",
    "nameEn": "Sunset dhow",
    "nameAr": "محمل الغروب",
